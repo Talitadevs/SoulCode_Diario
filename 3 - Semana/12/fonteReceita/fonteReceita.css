@@ -1,0 +1,60 @@
+/*Crie um Html com CSS que contenha os requisitos abaixo utilizando o assunto receita de bolo: Pode utilizar Css Inline , interno ou externo
+Utilizando <p> crie :
+1.Paragrafo com fonte familia Courier , tamanho larger , estilo normal e grossura 800
+2.Paragrafo com fonte familia Verdana , tamanho small , estilo Italico e grossura 200
+3.Paragrafo com fonte familia monospace, tamanho normal , estilo oblicuo e grossura 500
+4.Paragrafo com fonte familia Fantasy , tamanho X-small , estilo normal e grossura 400*/
+
+*{
+    margin: 1%;
+    padding: 0;
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+
+}
+#paragrafo1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-style: normal;
+    font-weight: 800;
+}
+#paragrafo2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-style: italic;
+    font-weight: 200;
+}
+#paragrafo3{
+    font-family: monospace;
+    font-size: inherit;
+    font-style: oblique;
+    font-weight: 500;
+}
+#paragrafo4{
+    font-family: fantasy;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: 400;
+}
+body{
+    background-image: url(brownie.jpg);
+    background-size: 100%;
+}
+main {
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    width: 70%;
+    margin: auto;
+}
+h1 {
+    text-align-last: center;
+    color: saddlebrown;
+    font-family: cursive;
+}
+h2 {
+    color: saddlebrown;
+}

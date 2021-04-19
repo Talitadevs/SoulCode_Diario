@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
+header{
+    background-color: #824e38;
+    width: 100%;
+    height: 60px;
+    font-family: perpetua;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    word-spacing: 20px;
+}
+header a{
+    color: white;
+    text-decoration: underline;
+}
+
+/*Body */
+body {
+    background-image: url(fundo.jpg);
+    width: 100%;
+    font-size: 25px;
+    font-family: perpetua;
+    line-height: 1.5;
+}
+th {
+    font-family: perpetua;
+}
+
+/*Tabela */
+table {
+    background-color: rgba(255, 255, 255, 0.9) ;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 2%;
+}
+@font-face{
+    font-family: caroline;
+    src: url(Caroline.otf);
+}
+h1 {
+    font-family: caroline;
+    font-size: 60px;
+}
+img {
+    width: 200px;
+}
+td {
+    text-align: center;
+}
+#tituloBest {
+    color: black;
+    font-size: 35px;
+    background-color: blanchedalmond;
+    font-family: perpetua;
+}
+#best {
+    font-size: 30px;
+    color: #d77c38;
+}
+
+/*Rodapé*/
+footer{
+    background-color: #824e38;
+    width: 100%;
+    height: 50px;
+    font-family: perpetua;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px; 
+    line-height: 1.5; 
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+footer {
+    color: white;
+}
+footer a{
+    color: white;
+}

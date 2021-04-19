@@ -1,0 +1,67 @@
+/*Utilizando CSS interno ou externo atenda os requisitos abaixo:
+Crie uma receita (obrigatório) utilizando os comandos de manipulação de fonte
+1. O texto deve ser alinhado ao centro
+2. Utilize o h1 para dizer o nome da receita e nele insira um underline com uma fonte(familia) diferente dos demais elementos
+3.um dos ingredientes deve ter uma linha riscada
+4. Deve se colocar cores de acordo com a prioridade dos ingredientes (Verde - obrigatorios / azul - a gosto)
+5.O tempo de preparo deve ser em itálico e usando small-caps
+6. Para fins de estética visual pode se utilizar elementos background / tables / sections / etc*/
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+h1 {
+    font-family: sans-serif;
+    text-decoration: underline;
+    color: #FF8C00;
+}
+h3 {
+    color: black;
+}
+p {
+    color: black;
+}
+body {
+    background-image: url(bolo.jpg);
+    background-size: 100%;
+    text-align: center;
+    color: green;
+}
+main {
+    width: 60%;
+    background-color: rgba(238,232,170, 0.9);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+#riscado{
+    text-decoration: line-through;
+}
+#aGosto{
+    color: blue;
+}
+#preparo {
+    font-style: italic;
+    font-variant: small-caps;
+}
+footer{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    height: 60px;
+    padding-top: 10px;
+}
+a {
+    color: white;
+}

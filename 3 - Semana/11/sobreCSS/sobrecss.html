@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre CSS</title>
+    <link rel="stylesheet" type="text/css" href="sobrecss.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="#sobrecss">Sobre CSS</a></li>
+                <li><a href="#estrutura">Estrutura</a></li>
+                <li><a href="#aplicacao">Aplicação</a></li>
+                <li><a href="#regra">Prioridades da regra</a></li>
+            </ul>
+        </nav>
+    </header>
+    <table>
+        <thead>
+            <tr >
+                <td colspan="2">
+                    <img src="css.png" alt="Símbolo CSS" id="css">
+                    <h1 id="titulo">Aprendendo CSS</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h3 id="sobrecss">Compreendendo mais sobre o CSS</h3><br>
+                    <p>
+                        O CSS, sigla de Cascading Style Sheets (Folhas de Estilos em Cascata) é um conjunto de regras para definir formatação e estilização das páginas web. Essas regras são aplicadas aos elementos de marcação da linguagem HTML, ou seja, as tags.
+                    </p><br>
+                    <p>
+                        A essência das CSS é bem simples, basicamente consiste em retirar dos documentos HTML todas as declarações de formatação e estilização das páginas web. Em outras palavras, nos documentos HTML teremos basicamente o conteúdo da página (texto, imagem, áudio, vídeo, etc.) e nas CSS teremos a forma da página, onde entendemos como forma tudo que diz respeito à formatação, estilização e layout.
+                    </p><br>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <main>
+            <tr>
+                <td>
+                    <h3 id="estrutura">Conhecendo a estrutura das CSS</h3><br><br>
+                    <p>
+                        As CSS nada mais são do que um conjunto de regras, tais regras são formadas seguindo a estrutura básica descrita abaixo: <br><br>
+
+                        <em>Seletor { propriedade_1 : valor_1; propriedade_2 : valor_2 }</em> 
+                        
+                        <br><br>
+                        
+                        <strong>Ou seja</strong><br><br>
+
+                        <em>h1{ color : red ; font-family : verdana }</em>
+                    </p> <br>     
+                </td>
+                <td rowspan="2" id="aside" >
+                    <aside>
+                            <h4 id="aplicacao">Podemos aplicar propriedades CSS a elementos HTML de três maneiras diferentes:</h4> <br><br>
+                            <ol>
+                                <li>
+                                    <a href="https://soulcodeacademy.teachable.com/courses/1361894/lectures/31305677">Inline</a>
+                                </li>
+                                <li>
+                                    <a href="https://soulcodeacademy.teachable.com/courses/1361894/lectures/31305677">Interno</a>
+                                </li>
+                                <li>
+                                    <a href="https://soulcodeacademy.teachable.com/courses/1361894/lectures/31305677">Externo</a>
+                                </li>
+                            </ol><br><br>
+                            <h4>Veja um exemplo de apliação de CSS abaixo:</h4> <br>
+                            <img src="aplicaçãoCss.JPG" alt="Aplicação CSS" id="imgaside"><br><br>
+                            <h4>Veja a analogia a seguir:</h4><br>
+                            <img src="analogia.jpg" alt="analogia HTML x CSS" id="imgaside">
+                    </aside>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 id="regra">Prioridade das regras CSS</h3><br><br>
+                    <p>
+                        Como o próprio nome sugere (Folhas de Estilos em Cascata), os estilos das regras CSS poderão ser cascateados, porém esse cascateamento muitas vezes gera conflitos entre regras de estilos externos, incorporados e inline. Quando um conflito ocorre a prioridade utilizada segue a ordem abaixo: <br><br>
+                        <ol>
+                            <li>Estilos inline <br>
+                                As regras definidas junto com seletor sobrepõem qualquer regra conflitante.</li><br>
+                            <li>Estilos incorporados <br>
+                                As regras incorporadas sobrepõem às regras externas.</li><br>
+                            <li>Estilos externos <br>
+                                as regras importadas de um documento CSS separado possuem a menor prioridade.</li>
+                        </ol>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <footer>
+        <a href="#menu">Voltar para o topo</a><br><br>
+        Informações retiradas do material disponível no Curso II - CSS 3 Fundamental BCW2 - Escola SoulCode Academy. <br>
+
+        Feito por Talita Fernandes ❤️
+    </footer>  
+</body>
+</html>

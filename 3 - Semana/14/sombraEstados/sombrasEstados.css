@@ -1,0 +1,94 @@
+/*CONSTRUA UMA PÁGINA QUE CONTENHA A RELAÇÃO DE ESTADOS BRASILEIROS E SUAS CAPITAIS.
+CADA ESTADO BRASILEIRO DEVE ESTAR DENTRO DE UM BOX DE TAMANHOS: 200px largura e 100px de altura (sugestão);
+Dentro dos boxes você deve inserir uma imagem da capital de cada estado, o nome da capital e uma breve descrição dela (ex: população, clima, etc.)
+Configure o nome da capital para se comportar como título (ter uma configuração diferente e de destaque).
+
+Adicione a pagina um mapa do brasil em plano de fundo no body que acompanhe o descida da pagina e adicione sombreamento que destaque a região de cada estado de acordo com os requisitos abaixo :
+
+Região norte : Verde-claro
+Região nordeste : Laranja
+Região sudeste : Verde escuro
+Região Centro-oeste : Amarelo
+Região sul : Azul*/
+ *{
+     margin:0;
+     padding: 0;
+}
+
+
+body {
+     background-image:url(fundo.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     width:100%; 
+     font-size: 19px;
+}
+@font-face {
+    font-family: caroline;
+    src: url(Caroline.otf);
+}
+h1 {
+     text-align: center;
+     background-color: yellow;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-family: caroline;
+     font-size: 60px;
+}
+h4 {
+    width: 200px;
+}
+td{
+    vertical-align: top;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 30px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+img {
+     height: 200px;
+     border-radius: 10px;
+     border-style: unset;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#legenda {
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+.centroOeste {
+    box-shadow: 5px 5px 10px rgb(242, 246, 6);
+}
+.norte {
+    box-shadow: 5px 5px 10px rgb(100, 228, 106);
+}
+.nordeste {
+    box-shadow: 5px 5px 10px rgb(250, 165, 8);
+}
+.sul {
+    box-shadow: 5px 5px 10px rgb(8, 12, 250);
+}
+.sudeste {
+    box-shadow: 5px 5px 10px rgb(3, 87, 80);
+}
+
+footer {
+    background-color: grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+footer a{
+    color: white;
+    font-size: 20px;
+}
+    
+
+ 

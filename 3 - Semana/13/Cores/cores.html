@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        *{
+            margin:0;
+            padding:0; 
+        }
+        @font-face {
+            font-family: cream;
+            src: url(Cream\ Cake.otf);
+        }
+        h1, h3 {
+            font-family: cream;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: #2F4F4F;
+        }
+        
+        body{
+            background: url(fundo2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 25px;
+            font-family: perpetua;
+            line-height: 1;
+            text-align: center;
+            line-height: 1.5;
+        }
+        main {
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            margin: auto;
+            width: 80%;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 2%;
+            text-align: left;
+        }
+        img {
+            height: 200px;
+            border-image-outset: 10px;
+            padding-left: 40%;
+        }
+
+        #bmw, #coca {
+            background-color: #F0FFF0;
+        }
+        #logococa, #face{
+            padding-left: 30%;
+        }
+        footer {
+            background-color: gray;
+            width: 100%;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: white;
+        }
+        footer a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <caption>
+            <h1 id="topo">O significado das cores de 10 marcas famosas</h1>
+        </caption>
+        <p>Por que a Coca-Cola é vermelha e branca, por que o Facebook é azul, <br>
+             por que o Google é colorido e outras explicações de grandes marcas</p>
+    </header>
+    <main>
+        <section>
+            <h3>Google</h3>
+            <img src="google.png" alt="Logomarca Google">
+            <p>
+            <em>Cores:</em> azul, vermelho, amarelo e verde. <br> 
+            <em>Explicação:</em> o Google sempre confunde a cabeça das pessoas quando a ideia é tentar achar um padrão nas cores das letras. Primeiro azul, depois vermelho, depois amarelo. Quando você pensa que o padrão vai se repetir, entra o verde. Inicialmente, a ideia era exatamente essa: passar uma ideia de brincadeira. Segundo Ruth Kedar, a designer que criou o logo, em entrevista à Wired, a intenção era trabalhar com as cores primárias, mas depois inserir uma secundária (o verde), mostrando que o Google "não segue regras e padrões".</p>
+        </section>
+        <section id="bmw" >
+            <h3>BMW</h3>
+            <img src="bmw.png" alt="Logomarca BMW">
+            <p> 
+                <em>Cores:</em> azul e branco <br>
+                <em>Explicação:</em> apesar da popular - porém falsa - versão que diz que o logo representa uma hélice de avião no céu (a empresa começou no ramo aéreo), a explicação verdadeira é mais simples: azul e branco são as cores oficiais da Baviera, o estado de origem da empresa alemã.
+            </p>
+        </section>
+        <section>
+            <h3>Facebook</h3>
+            <img src="facebook.jpg" alt="Logomarca Facebook" id="face">
+            <p> 
+                <em>Cores:</em> azul<br>
+                <em>Explicação:</em> Segundo o próprio  Mark Zuckerberg, em entrevista à revista The New Yorker, ele é daltônico e não reconhece corretamente vermelho e verde. Mas azul é uma cor muito distinta para ele. Daí a escolha.
+            </p>
+        </section>
+        <section id="coca">
+            <h3>Coca-Cola</h3>
+            <img src="coca.jpg" alt="Logomarca Coca-Cola" id="logococa">
+            <p> 
+                <em>Cores:</em> vermelho e branco<br>
+                <em>Explicação:</em>Nos anos 1890, no começo da marca nos EUA, a empresa pintava de vermelho os seus barris que carregavam o xarope usado na fabricação da bebida. Era uma maneira dos fiscais reconhecerem rapidamente os barris da Coca e não confundi-los com os barris de bebidas alcoólicas. Inclusive, a primeira revista corporativa da marca se chamada "The Red Barrel" (O Barril Vermelho) e foi lançada em 1924. Por esse motivo, a marca decidiu levar adiante a cor em sua identidade visual. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        Gostou do conteúdo? Você pode conhecer a história de outras marcas apenas clicando aqui 
+        <a href="https://exame.com/marketing/o-significado-das-cores-de-10-marcas-famosas/">Saiba Mais</a> <br>
+        <a href="#topo">Voltar ao topo</a>
+
+    </footer>
+    
+</body>
+</html>

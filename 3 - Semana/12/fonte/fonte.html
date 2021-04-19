@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte</title>
+    <link rel="stylesheet" type="text/css" href="fonte.css">
+</head>
+<body>
+    <header>
+        <caption>
+            <h1>Fonte</h1> <br>
+        </caption>
+        <h3>Podemos controlar as fontes utilizadas nos textos de uma página web com as seguintes propriedades</h3> <br>
+    </header>
+
+    <h2>font-family</h2>
+   
+    <p id="paragrafo1">
+
+        PARAGRÁFO 1 <br>
+
+        Uma lista com as fontes desejadas ordenadas por prioridade pode ser determinada através da propriedade font-family. <br>
+        <em>font-family: " Arial Black ", " Georgia ", " Courier New ";</em>
+    </p> <br>
+    <p id="paragrafo2">
+
+        PARAGRÁFO 2 <br>
+
+        Eventualmente, uma determinada fonte pode não estar disponível. Os navegadores devem utilizar a primeira fonte disponível da lista definida com a propriedade font-family. Por isso, essa lista deve ser ordenada da fonte com maior prioridade para a fonte com menor prioridade.
+    </p> <br>
+
+    <p id="paragrafo3">
+
+        PARAGRÁFO 3 <br>
+
+        Algumas fontes são consideradas seguras (Web Safe Fonts). Essa qualidade é atribuída às fontes que são suportadas em praticamente todos os sistemas operacionais e navegadores. Uma lista com essas fontes pode ser consultada no endereço http://cssfontstack.com/.
+    </p><br>
+
+    <p id="paragrafo4">
+
+        PARAGRÁFO 4 <br>
+
+        A linguagem CSS classifica as fontes em 5 grupos genéricos:
+        <ul id="paragrafo4">
+            <li>serif: <br>
+                Fontes serifadas. Os acabamentos nas extremidades das hastes das letras são denominados serifas.
+            </li>
+            <li>sans-serif: <br>
+                Fontes não serifadas.
+            </li>
+            <li>cursive: <br>
+                Fontes com estilo semelhante à escrita manual.
+            </li>
+            <li>fantasy: <br>
+                Fontes que possuem caracteres com decorações.
+            </li>
+            <li>monospace: <br>
+                Fontes que possuem caracteres com largura exatamente igual.
+            </li>
+        </ul>
+        <img src="fontes.JPG" alt="Fontes diversas">
+    </p> <br>
+
+    <p id="paragrafo5">
+
+        PARAGRÁFO 5 <br>
+
+        Se qualquer fonte de um determinado grupo genérico pode ser utilizada, devemos adicionar o nome desse grupo na lista definida coma propriedade font-family. Nesse caso, os próprios navegadores escolhem uma fonte do grupo genérico escolhido. <br>
+        <em>font-family : " Arial Black ", " Georgia ", " Courier New ", "sans - serif ";
+        </em>
+    </p> <br>
+
+     <p id="paragrafo6">
+
+        PARAGRÁFO 6 <br>
+
+        No exemplo acima, se as fontes “Arial Black”, “Georgia” e “Courier New” não estiverem disponíveis,os navegadores utilizarão alguma fonte do grupo sans-serif.
+     </p>
+</body>
+</html>

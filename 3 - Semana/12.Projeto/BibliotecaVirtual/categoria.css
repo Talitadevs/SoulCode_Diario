@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
+header{
+    background-color: #824e38;
+    width: 100%;
+    height: 60px;
+    font-family: perpetua;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 15px;
+    word-spacing: 20px;
+}
+header a{
+    color: white;
+    text-align: left;
+}
+header h1 {
+    text-align: center;
+    margin-top: -40px;
+    color: white;
+}
+body {
+    background-color: #F5DEB3;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 80%;
+    background-color: rgba(255, 255, 255,0.9);
+    padding: 10px;
+
+}
+#descricao {
+    font-style: italic;
+    font-size: 18px;
+}
+table tr{
+    vertical-align: top;
+}
+img {
+    height: 250px;
+
+}
+#capa {
+    width: 200px;
+}
+#font-weight {
+    font-weight: 1000;
+}
+#font-variant {
+    font-variant: small-caps;
+}
+#text-transform {
+    text-transform: uppercase;
+}
+#text-indent {
+    text-indent: 15px;
+}
+#word-wrap {
+    word-wrap: break-word;
+}
+.white-space {
+    white-space: pre;
+}
+/*Rodapé*/
+footer{
+    background-color: #824e38;
+    width: 100%;
+    height: 50px;
+    font-family: perpetua;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px; 
+    line-height: 1.5; 
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+footer {
+    color: white;
+}
+footer a{
+    color: white;
+}

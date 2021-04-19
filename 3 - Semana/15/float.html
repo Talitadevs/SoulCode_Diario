@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        section{
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        div{
+            border-radius: 10px;
+            border-style: solid;
+        }
+        #one{
+            border-color: rgb(50, 190, 190);
+            height: 60px;
+            margin-bottom: 5px;
+        }
+        #two{
+            border-color: rgb(50, 190, 190);
+            margin-bottom: 5px;
+            margin-right: 5px;
+            float: left;
+            height: 300px;
+            width: 100px;
+        }
+        #three{
+            border-color: red;
+            margin-bottom: 5px;
+            float: left;
+            height: 300px;
+            width: 480px;
+        }
+        #four{
+            border-color: orange;
+            float: left;
+            height: 294px;
+            width: 70px;
+        }
+        #five{
+            border-color: orange;
+            float: right;
+            height: 294px;
+            width: 70px;
+        }
+        #six{
+            border-color: rgb(50, 190, 190);
+            height: 60px;
+            margin-bottom: 5px;
+            width: 593px;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3
+            <div id="four">4</div>
+            <div id="five">5</div>    
+        </div>
+        <div id="six">6</div>
+    </section>
+    
+</body>
+</html>

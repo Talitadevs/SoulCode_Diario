@@ -1,0 +1,48 @@
+/*De acordo com as instruções em aula adicione aqui o resultado do requisito proposto.
+Criar uma página que contenha 06 parágrafos, cada parágrafo devera conter uma font-family diferente, com tamanho fonte de acordo com a ordem abaixo:
+1.30px
+2 large
+3.medium
+4.small
+5.x-small
+6.xx-small
+*/
+
+*{
+    margin: 1%;
+    padding: 0;
+}
+#paragrafo1 {
+    font-size: 30px;
+    font-family: cursive;
+    background-color: #FAF0E6;
+}
+#paragrafo2 {
+    font-family: fantasy;
+    font-size: large;
+    background-color: #FFF8DC;
+}
+#paragrafo3 {
+    font-family: monospace;
+    font-size: medium;
+    background-color: #FAEBD7;
+}
+#paragrafo4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    background-color: #FFEBCD;
+}
+#paragrafo5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-small;
+    background-color: #FFE4C4;
+}
+#paragrafo6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-small;
+    background-color:#EEE8AA;
+}
+h1, h2, h3 {
+    text-align: center;
+    
+}
