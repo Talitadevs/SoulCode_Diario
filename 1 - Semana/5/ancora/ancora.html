@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas_Imagens_Links</title>
+    <style>
+        h1 {
+            background-color: rgb(138, 18, 42);
+            width: 50%;
+            padding: 18 25;
+            border-radius: 5px 0px 5px 0px;
+            text-align: center;
+            color: rgb(248, 226, 239);
+        }
+
+        h2,
+        h3 {
+            color: darkred;
+    </style>
+
+</head>
+
+<!-- Crie uma página que apresente listas com pelo menos uma imagem, um bloco de texto e um link em cada uma das situações a seguir:
+1 Lista ordenada com 5 itens
+1 Lista não ordenada com 4 itens
+1 Lista de definição com 3 itens-->
+
+<body>
+
+    <h1 id="Topo">Testando conhecimentos da aula de hoje</h1>
+
+    <p><em>Para aplicar o aprendizado de âncora, foram criados links que facilitam a navegação ao longo da página</em></p>
+
+    <a href="#Meio">Meio da página</a>
+    
+    <h2>Listas, Imagens e Links</h2>
+
+    <p>Estamos criando uma página que apresente listas com pelo menos uma imagem, um bloco de texto e um link em cada
+        uma das situações a seguir:</p>
+
+    <h3>Uma lista ordenada com cinco itens</h3>
+
+    <ol type="I">
+        <p>Hoje aprendemos os itens abaixo:</p>
+
+        <li>Imagens em HTML: assim como estou inserindo esta imagem neste HTML</li> <br>
+        <img src="coração.jpg" title="Dois corações" alt="Imagem de dois corações">
+
+        <li>Alterando tamanho e alinhamento da imagem</li> <br>
+        <img src="coração2.png" title="Balões de corações" alt="Imagem com seis corações" width="300" align="bottom">
+        <br>
+
+        <li>Link com imagem</li>
+        <p>Para ver o link com imagem funcionando, clique na imagem abaixo e ela te levará para a página da
+            SoulCode.<br>
+            <a href="http://soulcodeacademy.org" title="Coração Brilhante" target="_blank"><img src="coração3.jpg"></a>
+        </p>
+
+        <li>Criando hiperlink</li>
+        <P>O hiperlink te levará para uma outra página, para testar <a href="http://soulcodeacademy.org"
+                target="_blank">CLIQUE AQUI</a>, </P>
+
+        <li>Links relativos</li>
+        <p>Para demonstrar a diferença de link relativo para link para link aboluto, basta observar a diferença da barra
+            de endereço dos links abaixo:
+        <ul>
+            <li>Link absoluto: todo o corpo desse link é considerado absoluto<a href="http://soulcodeacademy.org"
+                    target="_blank"> CLIQUE AQUI PARA VISUALIZAR</a></li>
+            <li>Link relativo: todo o corpo desse link é considerado absoluto e apenas a parte de
+                “curso-web-full-stack.html” é dita como link relativo <a
+                    href="https://soulcodeacademy.org/curso-web-full-stack.html" target="_blank">CLIQUE AQUI PARA
+                    VISUALIZAR</a></li>
+        </ul>
+        </p>
+    </ol>
+
+    <a href="#Rodape" id="Meio" >Fim da página</a>
+
+    <h3>Uma lista não ordenada com quatro itens</h3>
+
+    <ul type="square">
+
+        <p>Exercícios de hoje:</p>
+
+        <li>Listas e mais listas</li>
+        <img src="listas.png" alt="Lista" width=100>
+        <li>Pontos turísticos da minha cidade com imagem</li>
+        <img src="pontoturistico.png" alt="Ponto turístico" width=100>
+        <li>Aula links</li>
+        <a href="https://soulcodeacademy.teachable.com/courses/1306288/lectures/29985941" target="_blank"><img
+                src="link.png" alt="Link" width=100></a>
+        <li>Exercício com listas, imagens e links</li>
+        <img src="exercicio.png" alt="Exercício de fixação" width=100>
+    </ul>
+
+    <h3>Uma lista de definição com três itens</h3>
+
+    <dl>
+        <dt>Dos tópicos estudados hoje, seguem divisões por tipo de dificuldade:</dt> <br>
+
+        <dd>Fácil: Imagens em HTML; Criando hiperlink</dd>
+        <dd>Médio: Alterando tamanho e alinhamento da imagem</dd>
+        <dd>Difícil: Link com imagem; Links relativos(difícil compreender)</dd>
+        <p>Obrigada SoulCode, a aula de hoje agregou demais da conta sô!</p>
+        <a href="http://soulcodeacademy.org" target="_blank"><img src="soulcode.JPG" alt="amor SoulCode"
+                width="20%"></a>
+
+    </dl>
+</body>
+
+<a href="#Topo">Topo da página</a>
+
+<p id="Rodape" ><Em></Em> Talita Fernandes Silva - 12.03.21 </Em></p>
+
+</html>
