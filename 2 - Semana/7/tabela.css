@@ -1,0 +1,19 @@
+body {
+    padding: 2%;
+}
+table {
+    border="black";
+    align="center"; 
+    border-spacing: 3px;
+    border-collapse: collapse;
+    border-style:inherit;
+    width: 90%;
+}
+caption {
+    padding: 5px 5px 20px 0px;
+    font-size: 150%;
+    color:#9ACD32;
+}
+.cabecalho {
+    color: white;
+}

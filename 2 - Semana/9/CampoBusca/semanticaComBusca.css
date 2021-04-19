@@ -1,0 +1,82 @@
+*{
+    margin: 1%;
+    padding: 0%;
+}
+.header {
+    background-color: rgb(224, 192, 238);
+}
+    h1, h2 {
+        color: rgb(119, 34, 112);
+        text-align: center;
+        padding: 0px 2px 2px 2px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    dl dt{
+        font-style:italic;
+        padding: 15px 2px 5px 2px;
+    }
+    #img {
+        width: 20%;    
+    }
+section {
+    background-color: rgb(199, 250, 175);
+}
+article {
+    background-color: rgb(198, 230, 248);
+}
+aside {
+    background-color: rgb(241, 228, 153);
+    float: right;
+    height: 350px;
+}
+nav {
+    background-color: rgb(248, 194, 221);
+    float: left;
+    height: 350px;
+   }
+nav li{
+    margin: 2%;
+}
+footer {
+    background-color: rgb(163, 156, 156);  
+}
+#divBusca{
+    background-color:#E0EEEE; 
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px; 
+    height:32px; 
+  }
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+#btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+}
+#divBusca img{
+float:left; 
+}
+#td1 {
+    width: 20%;
+}
+#td2 {
+    width: 40%;
+    text-align-last: left;
+}
+#td3 {
+    width: 40%;
+}

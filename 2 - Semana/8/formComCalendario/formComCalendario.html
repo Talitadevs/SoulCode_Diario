@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Calendário</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <style>
+    h1 {
+        align-content: center;
+        color: #03626a;
+    }
+   
+    div {
+        padding: 5px 5px 5px 5px;
+    }
+  
+    body {
+        color:#03626a;
+        font-size: 20px;
+        background-image: url(fundo2.jpg);
+        background-size: 100%;
+    }
+    form {
+        text-align-last: center;
+        background: rgba (50, 205,50, 50%);
+    }
+    form label {
+        text-align-last: left;
+    }
+    input {
+        width: 22%;
+        text-align-last: left;
+    }
+    #porque {
+        width: 22%;
+        height: 80px;
+        text-align-last: left;
+    }
+    ::placeholder{
+        font-size: 17px;
+        text-align: left;
+    }
+    #calendario {
+        width: 10%;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-size:20px;
+        background: #03626a;
+    }
+    footer a{
+        color: white;
+    }
+    button {
+        padding: 5px 10px 5px 10px;
+        border: none;
+        font-size: 22px;
+        background-color: #32CD32;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                     <figure>
+                         <img src="global.png" alt="Global Hitss" width="70%">
+                      </figure>  
+                </td>
+                <td>
+                    <figcaption>
+                        <h1>Global Hitss está contratando 👀</h1>
+                    </figcaption>
+                </td>
+            </tr>            
+        </table>
+    </header>
+    <main>
+        <form action="" method="POST">
+            <div>
+                <label for="name">Nome*</label><br>
+                <input type="text" autofocus id="name" placeholder="Digite seu nome completo" required="true"/>
+            </div>
+            <div>
+                <label for="tel">Telefone*</label><br>
+                <input type="tel" pattern=\d{0,12} required="true" title="12 números" id="tel" placeholder="somente números com DDD"/>
+            </div>
+            <div>
+                <label for="email">E-mail*</label><br>
+                <input type="text" required="true" name="email" id="email"/>
+            </div>
+            <div>
+                <label for="escola">Escola*</label><br>
+                <input type="text" required="true" id="escola" placeholder="Ex.: SoulCode Academy"/>
+            </div>
+            <div>
+                <label for="porque">Porquê você?*</label><br>
+                <textarea name="porque" required="true" id="porque" placeholder="Descreva, em pouca palavras, porque devemos contratar você para integrar nosso time!"></textarea>
+            </div>
+            <div>
+                <p>Qual melhor dia para um bate-papo?* <br>
+                <input type="text" id="calendario"></p>
+    <script id="calendario">
+        $(function() {
+            $( "#calendario" ).datepicker({
+                showOn: "button",
+                buttonImage: "calendario.png",
+                buttonImageOnly: true,
+                showButtonPanel:true,
+                changeMonth: true,
+                changeYear: true,
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                numberOfMonths: 1,
+                dateFormat: 'dd/mm/yy',
+                dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+                dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+                dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+                monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+                monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+            });
+        });
+    </script>
+            </div>
+             <div>
+            <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://globalhitss.com/">Saiba mais em nosso site!</a>
+    </footer>  
+</body>
+</html>

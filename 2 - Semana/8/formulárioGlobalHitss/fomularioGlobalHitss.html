@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato da Global Hitss</title>
+    <link rel="stylesheet" href="formComCalendario.css">
+</head>
+<body background-color="#03626a">
+    <header>
+        <table>
+            <tr>
+                <center>
+                    <figure>
+                        <img src="global.png" alt="Global Hitss" width="20%">
+                    </figure>
+                </center>
+            </tr> 
+            <tr>
+                    <figcaption align="center" width="80%">
+                        <h1>Global Hitss está contratando 🔎</h1>
+                    </figcaption>
+            </tr>            
+        </table>
+    </header>
+    <main>
+        <form action="" method="POST">
+            <div>
+                <label for="name">Nome*</label><br>
+                <input type="text" autofocus id="name" placeholder="Digite seu nome completo" required="true"/>
+            </div>
+            <div>
+                <label for="tel">Telefone</label><br>
+                <input type="tel" pattern=\d{0,11} required="true" title="11 números" id="tel" placeholder="(31)XXXXX-XXXX"/>
+            </div>
+            <div>
+                <label for="email">E-mail</label><br>
+                <input type="text" required="true" name="email" id="email"/>
+            </div>
+            <div>
+                <label for="escola">Escola</label><br>
+                <input type="text" required="true" id="escola" placeholder="Ex.: SoulCode Academy"/>
+            </div>
+            <div>
+                <label for="porque">Porquê você?</label><br>
+                <textarea name="porque" required="true" id="porque" placeholder="Descreva, em pouca palavras, porque devemos contratar você para integrar nosso time!"></textarea>
+            </div>
+             <div>
+            <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="https://globalhitss.com/">Saiba mais em nosso site!</a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+h1 {
+    color: #03626a;
+}
+form {
+    text-align-last: center;
+}
+div {
+    padding: 5px 5px 5px 5px;
+}
+body {
+    color:#03626a;
+    background-color: #E0FFFF;
+}
+input {
+    width: 25%;
+}
+#porque {
+    width: 25%;
+    height: 100px;
+}
+::placeholder{
+    font-size: 17px;
+    text-align: left;
+}
+footer {
+    text-align: center;
+    padding-top: 20px;
+}

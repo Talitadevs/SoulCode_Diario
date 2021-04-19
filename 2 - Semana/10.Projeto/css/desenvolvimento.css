@@ -1,0 +1,240 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1573867975080-15a3d9445345?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainContainer {
+    display: grid;
+    border-radius:15px;
+    grid-template-columns: 7fr 3fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+#mainContainer aside {
+    background-color: #FFA500;
+    border-radius:15px;
+}
+
+main {
+    padding: 2%;
+    
+}
+
+aside {
+    /* display: grid; 
+    grid-column-start: 2; */
+    background-color: #FFA500;
+    border-radius: 15px; 
+    vertical-align: top;  
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    text-align-last: center;
+    
+   /*flex fica flexisivel, position eu coloquei fixed para fixar na tela e o right é para ele ficar do lado direito*/
+}
+
+form{
+    padding: 1%;
+    color: white;
+}
+.lista {
+    list-style: none;
+}
+
+#foto1 {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#foto2 {
+    width: 36px;
+    border-radius: 50%;
+} 
+
+#foto3, #foto4, #foto5, #foto6 {
+    width: 40px;
+    border-radius: 50%;
+}
+
+h2 {
+    display: inline-block; 
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 50px;
+}
+
+#titulo2 {
+    text-align: center;
+}
+
+/*PARTE DO MENU*/
+header {
+    height: 120px;
+    background-color: #8B4513;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    align-self: center;
+    margin: 20px;   
+}
+
+header nav {
+    align-self: center;
+    font-size: 18px;
+}
+
+#menu {
+    list-style:none;
+    float: left;   
+}
+
+#menu li {
+    position:relative;        
+    float:left;
+    color: white;
+    font-weight: 100;
+}
+
+#menu li a {
+    color: white;
+    text-decoration:none; 
+    padding: 10px 10px 10px 10px; 
+    display:block;
+}
+
+#menu li ul{
+    position:absolute;    
+    top:25px;    
+    left:0;    
+    background-color:#fff;    
+    display:none;     
+}  
+
+#menu li a:hover, #menu li ul li:hover {  
+    background:#DEB887;    
+    color:#fff;    
+    -moz-box-shadow:0 3px 10px 0 #CCC;    
+    -webkit-box-shadow:0 3px 10px 0 #ccc;    
+    text-shadow:0px 0px 5px #fff;    
+    width: 90%;
+
+}
+
+#menu li:hover ul, #menu li:hover ul {
+    display:block;
+    background-color: #DEB887;    
+}
+
+#menu li ul li{
+    display:block;    
+    width: auto;   
+}
+
+/*PARTE DO FOOTER*/
+.footer {
+        background: #3CB4C4;
+        padding-top: 2px 2px 2px 2px;
+    }
+
+.rodapé {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 34px;
+
+}
+
+.divdorodapé {
+    background-color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+ .divdorodapé p {
+    margin: 10px;
+    color: #ccc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 157px;
+    height: 157px;
+    float: left;
+
+}
+.inicio {
+    position: relative;
+    min-height: 7px;
+    padding-right: 40px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sobrenos{ 
+    position: relative;
+    min-height: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+}
+
+.redesocial {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    box-sizing: border-box;    
+}
+
+.inicio ul li a, .sobrenos ul li a, .suporte ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.inicio ul li a:hover, .sobrenos ul li a:hover, .suporte ul li a:hover{
+    text-decoration:none;
+    color: rgba(255, 165, 0, 0.95);
+}
+
+footer h5 {
+    margin: 10px;
+}

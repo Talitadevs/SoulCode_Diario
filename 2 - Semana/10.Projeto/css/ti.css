@@ -1,0 +1,262 @@
+/* P ESTILIZAR O MENU*/ 
+
+*{ 
+    margin: 0; 
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+ .top{
+    text-align-last: center;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+.top img{
+    padding: 5px 2px 2px 2px;
+    width: 100%;   
+}
+
+h1 {
+    margin: 40px;
+}
+#curso {
+    margin: auto;
+    padding: 25px 15px 15px 15px;
+    width: 80%;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+#form {
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin: auto;
+}
+
+td {
+    padding:1%;
+}
+body {
+    background-image: url(./img/monitor.jfif);
+    background-size: 100%;
+            }
+#aside {
+    display:block;
+    background-color: rgba(255, 165, 0, 0.95);
+    vertical-align: top;  
+    text-align-last: center;
+    border-radius: 15px;
+}    
+/* 
+.menu{
+    list-style: none;
+    float:center;
+    border: 20px 20px 20px 20px;
+    font-size: 20px;
+}
+
+.menu li{
+    position: relative;
+    list-style: none;
+    float:left;
+    background: ; 
+}
+
+.menu li a{
+    color:#ffffff;
+    text-decoration:none;
+    padding: 2px 10px 2px 10px;
+    display: block;
+}
+.menu li a:hover{
+    background:#000000;
+    color: #ff9305;
+}
+.menu li ul{
+    position:absolute;
+    top: 30px;
+    left: 0;
+    background-color:#3CB4C4;
+    display: none;
+}
+.menu li:hover ul{
+    display:block;
+}
+.menu li ul li{
+    display:block;
+    width:150px;
+} */
+
+header {
+    height: 120px;
+    background-color: #8B4513;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    align-self: center;
+    margin: 20px;   
+}
+
+header nav {
+    align-self: center;
+    font-size: 18px;
+}
+
+#menu {
+    list-style:none;
+    float: left;   
+    
+}
+
+#menu li {
+    position:relative;        
+    float:left;
+    color: white;
+    font-weight: 100;
+    
+}
+
+#menu li a {
+    color: white;
+    text-decoration:none; 
+    padding:0px 10px 10px 10px; 
+    display:block;
+    
+}
+
+#menu li ul{
+    position:absolute;    
+    top:25px;    
+    left:0;    
+    background-color:#fff;    
+    display:none; 
+       
+}  
+
+#menu li a:hover, #menu li ul li:hover {
+    background:#DEB887;    
+    color:#fff;    
+    -moz-box-shadow:0 3px 10px 0 #CCC;    
+    -webkit-box-shadow:0 3px 10px 0 #ccc;    
+    text-shadow:0px 0px 5px #fff;    
+    width: 90%;
+}
+
+#menu li:hover ul, #menu li:hover ul {
+    display:block;
+    background-color: #DEB887;    
+}
+
+#menu li ul li{
+    display:block;    
+    width: auto;   
+}
+
+
+tbody {
+    border-radius: 15px;
+}
+/* aqui acaba o css copiado */
+
+div nav{
+    float:center;
+    display: flex;
+    justify-content: space-between
+}
+
+pre {text-align: left;}
+
+.ancoras {
+    font-size: large;
+    font-style: italic;
+    color: inherit;
+    text-decoration: none;} 
+
+.footer {
+        background: #3CB4C4;
+        padding-top: 2px 2px 2px 2px;
+    }
+
+.rodapé {
+    background-color: #3c3d41;
+    color: white;
+    padding-top: 34px;
+
+}
+
+.divdorodapé {
+    background-color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+ .divdorodapé p {
+    margin: 10px;
+    color: #ccc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.logo img{
+    width: 157px;
+    height: 157px;
+    float: left;
+
+}
+.inicio {
+    position: relative;
+    min-height: 7px;
+    padding-right: 40px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sobrenos{ 
+    position: relative;
+    min-height: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    color: white;
+}
+
+.redesocial {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.inicio ul li a, .sobrenos ul li a, .suporte ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.inicio ul li a:hover, .sobrenos ul li a:hover, .suporte ul li a:hover{
+    text-decoration:none;
+    color: rgba(255, 165, 0, 0.95);
+}
+
+footer h5 {
+    margin: 10px;
+}
+
