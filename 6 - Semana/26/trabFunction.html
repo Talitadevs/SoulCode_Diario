@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com funções</title>
+    <script>
+        
+    // 1.Crie uma função que exibe a palavra (ímpar/par) de acordo com o numero digitado pelo usuário.
+
+    n = parseFloat(prompt("Digite um número para saber se é par ou ímpar: "))
+    function imparPar(n){
+        if (n % 2){
+            document.write("Número digitado é: ímpar.", "</br>", "</br>")
+        } else {
+            document.write("Número digitado é: par.", "</br>", "</br>")
+        }
+    }
+    imparPar(n)
+// -------------------------------------------------------------------------
+
+    // 2.Crie uma função que recebe 2 parâmetros(numéricos) e retorna a divisão deles e mostra na tela.
+
+    a = parseFloat(prompt("Digite o 1º valor para fazermos uma divisão: "));
+    b = parseFloat(prompt("Digite o 2º valor para concluirmos a divisão: "));
+
+    function div(a, b){
+        result = (a / b).toFixed(2);
+    }
+    div(a, b);
+    document.write("A divisão do valor 1 pelo valor 2 é: " +result+ ".", "</br>", "</br>");
+//-------------------------------------------------------------------------
+
+    //3.Crie uma função que pede ao usuário para digitar um valor e calcular 5% de desconto retornando o valor do desconto.
+    
+    valor = parseFloat(prompt("Digite o valor para receber um desconto de 5% : "));
+    
+    function desc(valor){
+        return  valor * (5/100);
+    }
+    document.write("Valor total de desconto : " +desc(valor)+ "</br>", "</br>");
+// -------------------------------------------------------------------------
+    
+    // 4.Crie uma função que recebe o ano de nascimento da pessoa informando se ela é maior de idade(18 anos acima) ou menor (considere 2021)   
+    
+    function maiorMenor(ano){
+        if(ano < 2003){
+            return "Maior de idade!"
+        } else {
+            return "Menor de idade!"
+        }
+    }
+    ano = parseFloat(prompt("Digite seu ano de nascimento: "));
+    document.write(maiorMenor(ano));
+// -------------------------------------------------------------------------
+
+// RESPOSTA
+// Segue, abaixo do enunciado, o minha conclusão de qual seria o resultado da atividade extra.
+
+// <!-- * Extra : Imagine o seguinte cenário: Marcelo lhe deve um dinheiro e promete pagar em parcelas mensais de R$ 70; com o intuito de prever qual seria o valor devido após o decorrer de 12 meses, você resolve escrever algumas linhas de código (JavaScript). Levando em consideração que o valor devido por Marcelo era de R$ 1400, qual seria o total devido após a execução do trecho a seguir?
+
+// var total_divida = 1400;
+// function atualizar_divida(valor_recebido){
+// total_divida -= valor_recebido;
+// return total_divida;
+// }
+// for(var i=0;i<12;i++){
+// atualizar_divida(70);
+// }  -->
+
+// RESPOSTA
+// Como o for, que é o laço de repetição e que contém a principal variável responsável por atualizar o valor da dívida, foi declarado fora da function, a variável de mesmo nome, dentro da function não será atualizada e, consequentemente, o valor de return total-divida continuará com sua primeira atribuição, que foi de 1400.
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

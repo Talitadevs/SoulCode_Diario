@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando If e Else</title>
+    <script>
+    // números
+        var n1=18;
+        var n2=27;
+        var n3=39;
+        var n4=24;
+        var aux=n1;
+
+    // Decrescente
+
+        // comparando número 2 com número 1
+        if(n2 > n1){
+            aux = n2;
+            n2 = n1;
+            n1 = aux
+        } 
+        // comparando número 3 com número 1 e 2
+        if(n3 > n1){
+            aux = n3;
+            n3 = n1;
+            n1 = aux
+        }
+        if(n3 > n2){
+            aux = n3;
+            n3 = n2;
+            n2 = aux
+        }
+        // comparando número 4 com número 1, 2 e 3
+        if(n4 > n1){
+            aux = n4;
+            n4 = n1;
+            n1 = aux
+        }
+        if(n4 > n2){
+            aux = n4;
+            n4 = n2;
+            n2 = aux
+        }
+        if(n4 > n3){
+            aux = n4;
+            n4 = n3;
+            n3 = aux
+        }
+        document.write("Ordem decrescente ", n1+"-"+n2+"-"+n3+"-"+n4, "</br>");
+
+    //Crescente
+
+        // comparando número 2 com número 1
+        if(n2 < n1){
+            aux = n2;
+            n2 = n1;
+            n1 = aux
+        } 
+        // comparando número 3 com número 1 e 2
+        if(n3 < n1){
+            aux = n3;
+            n3 = n1;
+            n1 = aux
+        }
+        if(n3 < n2){
+            aux = n3;
+            n3 = n2;
+            n2 = aux
+        }
+        // comparando número 4 com número 1, 2 e 3
+        if(n4 < n1){
+            aux = n4;
+            n4 = n1;
+            n1 = aux
+        }
+        if(n4 < n2){
+            aux = n4;
+            n4 = n2;
+            n2 = aux
+        }
+        if(n4 < n3){
+            aux = n4;
+            n4 = n3;
+            n3 = aux
+        }
+        document.write("Ordem crescente ", n1+"-"+n2+"-"+n3+"-"+n4);
+       
+    </script>
+</head>
+<body>
+<!-- 1. Faça um script que leia 4 números e mostre-os em ordem crescente e depois em ordem decrescente.-->
+</body>
+</html>

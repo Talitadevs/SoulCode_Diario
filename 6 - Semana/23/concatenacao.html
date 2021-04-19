@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores matemáticos e concatenação</title>
+    <script>
+        //Item 1
+        var minhaIdade = 31, filhoIdade = 0;
+        var resultado = minhaIdade + filhoIdade;
+        document.write(resultado);
+        document.write("<br/>");
+
+        // Item 2
+        var paiIdade = 56;
+        document.write(resultado * paiIdade);
+        document.write("<br/>");
+
+        // Item 3
+        var natIdade = 34, duIdade = 30;
+        var resultado2 = natIdade + duIdade;
+        document.write((resultado2 * minhaIdade)/resultado);
+        document.write("<br/>");
+
+        // Item 4
+        var renda = 3000;
+        var pessoas = 2;
+        var resultado3 = renda/pessoas;
+        document.write(resultado3*30);
+        document.write("<br/>");
+
+        // Item 5
+        document.write("A soma da minha idade com a do meu filho é ", +resultado, ".","<br/>"," Já o resultado da soma do item anterior multiplicado com a idade do meu pai é ", +resultado*paiIdade, ".", "<br/>", " Agora, a soma da idade dos meus irmãos, multiplicado pela minha idade e divido pelo resultado da soma da minha idade com a do meu filho é ", +(resultado2 * minhaIdade)/resultado, ".", "<br/>", "E, por fim, a renda familiar dividida pela quantidade de pessoas que compõem minha família multiplicado por 30 é ", +(resultado3*30), ".", "<br/>")
+
+    </script>
+</head>
+<body>
+</body>
+<!-- Talita Fernandes Silva -->
+</html>

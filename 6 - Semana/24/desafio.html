@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <script>
+        var mesa = 1 //nesse momento é apenas para escolhar qual a mesa.
+        
+        var quant = 5; //digitar quantidade 
+        var cod = 102; //digitar um código
+
+        var quant1 = 8; //digitar quantidade 
+        var cod1 = 105; //digitar um código
+
+        var quant2 = 7; //digitar quantidade 
+        var cod2 = 100; //digitar um código
+
+        // mesa escolhida
+        switch(mesa){
+            case 1: document.write("Fechamento MESA 1", "</br>", "</br>");break
+            case 2: document.write("Fechamento MESA 2", "</br>", "</br>");break
+            case 3: document.write("Fechamento MESA 3", "</br>", "</br>");break
+            case 4: document.write("Fechamento MESA 4", "</br>", "</br>");break;
+            default: document.write("Mesa inexistente!", "</br>", "</br>");break;
+        }
+        // produto escolhido 1
+        switch(cod){
+            case 100: document.write("Cachorro quente - ", (1.20 * quant), ".", "</br>");break;
+            case 101: document.write("Bauru simples - ", (1.30 * quant), ".", "</br>");break;
+            case 102: document.write("Bauru com ovo - ", (1.50 * quant), ".", "</br>");break;
+            case 103: document.write("Hambúrger - ", (1.20 * quant), ".", "</br>");break;
+            case 104: document.write("Cheeseburguer - ", (1.30 * quant), ".", "</br>");break;
+            case 105: document.write("Refrigerante - ", (1.00 * quant), ".", "</br>");break;
+            default: document.write("Código inexistente!")
+        }
+
+        // produto escolhido 2
+        switch(cod1){
+            case 100: document.write("Cachorro quente - ", (1.20 * quant1), ".", "</br>");break;
+            case 101: document.write("Bauru simples - ", (1.30 * quant1), ".", "</br>");break;
+            case 102: document.write("Bauru com ovo - ", (1.50 * quant1), ".", "</br>");break;
+            case 103: document.write("Hambúrger - ", (1.20 * quant1), ".", "</br>");break;
+            case 104: document.write("Cheeseburguer - ", (1.30 * quant1), ".", "</br>");break;
+            case 105: document.write("Refrigerante - ", (1.00 * quant1), ".", "</br>");break;
+            default: document.write("Código inexistente!", "</br>")
+        }
+
+        // produto escolhido 3
+        switch(cod2){
+            case 100: document.write("Cachorro quente - ", (1.20 * quant2), ".", "</br>");break;
+            case 101: document.write("Bauru simples - ", (1.30 * quant2), ".", "</br>");break;
+            case 102: document.write("Bauru com ovo - ", (1.50 * quant2), ".", "</br>");break;
+            case 103: document.write("Hambúrger - ", (1.20 * quant2), ".", "</br>");break;
+            case 104: document.write("Cheeseburguer - ", (1.30 * quant2), ".", "</br>");break;
+            case 105: document.write("Refrigerante - ", (1.00 * quant2), ".", "</br>");break;
+            default: document.write("Código inexistente!", "</br>")
+        }
+    </script>
+</head>
+<body>
+<!-- Desafio :
+3.O cardápio de uma lancheria é o seguinte:
+
+Especificação Código Preço
+Cachorro quente 100 1.20
+Bauru simples 101 1.30
+Bauru com ovo 102 1.50
+Hambúrger 103 1.20
+Cheeseburguer 104 1.30
+Refrigerante 105 1.00
+
+Implemente um programa que leia o código do item pedido, a quantidade e calcule o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item. -->
+</body>
+</html>

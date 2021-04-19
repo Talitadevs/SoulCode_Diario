@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste function</title>
+    <script>
+// Function com o valor sendo escrito na tela e usuario digitando(resultado não está sendo guardado)
+
+        horas = parseFloat(prompt("Digite a quantidade de horas: "));// variaveis digitadas pelo usuario
+        job = parseFloat(prompt("Digite o valor da hora: "))
+        
+        function horasJob(horas, job){ // definição da função
+        document.write(total = (horas * job).toFixed(2), "</br>");// impressao da função
+        }
+        horasJob(horas, job);// chamar a função feita depois que ela fecha
+//---------------------------------------------------------------------------
+
+// Function com o valor retornando um resultado(ele guarda o valor do resultado e depois usamos o document.write para apresentar na tela)
+        
+        function parImpar(numero){ // retornando a função exemplo número par ou impar
+            
+            if(numero%2){ //como o resto da divisão é 0, significa falso e ele entra na segunda opção
+                return "Ímpar";
+            } else {
+                return "Par";
+            }
+        }
+        num = parseInt(prompt("digite um número: ")); // vai analisar se o numero digitado é par ou impar
+        result = parImpar(num);
+        document.write(result);
+//-------------------------------------------
+
+// 0=falso 
+// 1=verdadeiro
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

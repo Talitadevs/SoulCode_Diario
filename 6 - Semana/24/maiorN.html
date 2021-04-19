@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior número de 03</title>
+    <script>
+        // guardando os números
+        num = [7,52,27];
+        document.write("Números inteiros: ", num[0], ", ", num[1],  ", ", num[2], ".", "</br>", "</br>")
+
+        // se a 1ª posição do array for maior que a 2ª ou a 3ª posição, imprime ela
+        if (num[0] > num[1] && num[0] > num[2]){
+        document.write("Maior número: ", num[0], ".");
+
+        // se a 2ª posição do array for maior que a 1ª ou a 3ª posição, imprime ela
+        } else if (num[1] > num[0] && num[1] > num[2]){
+        document.write("Maior número: ", num[1], ".");
+
+        // se não for nenhuma das opções, imprime a 3ª posição 
+        }else {
+        document.write("Maior número: ", num[2], ".");
+        }
+    </script>
+</head>
+<body>
+    <!-- Faça um script que leia três números inteiros e mostre o maior deles. -->
+</body>
+</html>

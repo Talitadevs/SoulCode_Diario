@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com as estruturas de repetição 2</title>
+    <script>
+    
+    //variáveis
+    var num = [];
+    var positive = 0;
+    var negative = 0;
+    var soma = 0;  
+    var media = 0;
+
+    //cálculo
+    quanto = parseFloat(prompt("Digite quantos números serão inseridos: "));
+
+    for(a=0; a<quanto; a++){
+        num[a] = parseFloat(prompt("Digite o número para ocupar a posição "+a));
+        
+        if(num[a]>0){
+            positive++;
+        } else {
+            negative++;
+        }
+        soma += num[a];
+        media = (soma/quanto).toFixed(2);
+    }
+    document.write("Quantidade de números escolhidos: " +quanto+ ".", "</br>", "Números digitados: " +num+ "</br>", "Soma dos números digitados: " +soma+ ".", "</br>", "Média aritmética dos números digitados: " +media+ ".", "</br>", "Valores positivos: " +positive+ ".", "</br>", "Valores negativos: " +negative+ ".", "</br>")
+
+    </script>
+</head>
+<body>
+<!-- 2 - 
+Desenvolver um algoritmo onde o usuário determina quantidade de valores que será solicitado ao usuario. Calcule e escreva amédia aritmética dos valores lidos, a quantidade de valores positivos, a quantidade de valores
+negativos. -->
+</body>
+</html>

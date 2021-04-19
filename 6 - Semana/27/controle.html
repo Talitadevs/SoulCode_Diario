@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle</title>
+    <script>
+        // Peço usuário para digitar um número e ele digita um nome, o que fazer para isso não acontecer?
+        num = parseInt(prompt("Digite um número: "));
+        
+         while(typeof(num) != 'Number' || num == "NaN" ){// para agir enquanto a condição for válida
+             alert("Número inválido. Digite novamente.");
+             num = parseInt(prompt("Digite um número: "));
+            }
+            
+         document.write("Número válido.")//não está funcionando, verificar.
+        
+         //outro exemplo
+
+        //  num = parseInt(prompt("Digite um número de 0 a 10: "))
+
+        //  while(num <0 || num>10){
+        //     alert("Número inválido, digite novamente");
+        //     num = parseInt(prompt("Digite um número de 0 a 10: "))
+        //  }
+        //  document.write("Número válido");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

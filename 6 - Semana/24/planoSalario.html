@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de salário</title>
+    <script>
+        // dados
+        salario = 5500.00;
+        planoA = 10/100;
+        planoB = 15/100;
+        planoC = 20/100;
+        planoEscolhido = planoB; //digite o plano escolhido aqui
+        salarioAjustado = salario + (salario * planoEscolhido);
+        document.write("Salário atual: ", salario, ".", "</br>")
+
+        switch(planoEscolhido){
+            case 10/100: document.write("Plano escolhido: Plano A", ".", "</br>");break;
+           
+            case 15/100: document.write("Plano escolhido: Plano B", ".", "</br>");break;
+           
+            case 20/100: document.write("Plano escolhido: Plano C", ".", "</br>");break;
+
+            default: document.write("Escolha entre plano A, B ou C.")
+        }
+        document.write("Salário ajustado: ", salarioAjustado, ".")
+    </script>
+</head>
+<body>
+    <!-- 2.Um funcionário irá receber um aumento de acordo com o seu plano de
+trabalho, de acordo com a tabela abaixo:
+Plano Aumento
+A. 10%
+B. 15%
+C. 20%
+Faça um programa que leia o plano de trabalho e o salário atual de um funcionário e calcula e imprime o seu novo salário. -->
+</body>
+</html>

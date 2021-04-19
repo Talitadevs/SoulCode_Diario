@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function como declarar, inserir argumento e mostrar o resultado na tela</title>
+    <script>
+        // serve para executar uma tarefa
+        function calculaImc(altura, peso){ //aqui declaramos um nome da função, o nome quiser
+            imc = peso / altura**2; //calculo
+            document.write(imc.toFixed(2)) //.tofixed(2) para aparecer somente duas casas decimais
+        }
+        calculaImc(1.58,50);//aqui chamamos a função para ela executar, significa que estamos passando por parametro, respectivamente os argumentos
+
+        // para o usuario digitar o proprio valor, basta fazer uma variagem com parseint(prompt) e chamar a variável dentro do document.write
+
+        // para mais de um valor a ser digitado, é só definir outra variável
+
+        function imprime(texto){//para imprimir uma função
+            document.write("<h1>"+texto+"</h1>")
+        }
+        imprime("Talita")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

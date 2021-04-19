@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 function</title>
+    <script>
+//1 - função que mostra se a idade digitada pelo usuario é maior ou menor de idade
+        id = parseInt(prompt("Digite sua idade: "));
+        function idade(id){
+            if(id <18){
+                document.write("Menor de idade.", "</br>");
+            } else if(id>=18){
+                document.write("Maior de idade.", "</br>");
+            }
+        }
+        idade(id)
+
+//2 - função que retorna quando o numero digitado for maior que 100.
+       
+        function numero(n){
+            if(n > 100){
+                return "Número digitado maior que 100."
+            } else {
+                return "Número digitado menor que 100."
+            }
+        }
+        n = parseInt(prompt("Digite um número: "));
+        document.write(numero(n));
+        
+    </script>
+</head>
+<body>
+
+ 
+</body>
+</html>

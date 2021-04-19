@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação</title>
+    <!-- 1) Crie um site personalizado por você que tenha um botão em html que ao ser clicado acesse uma função que peça para o usuário digitar um numero N que seja maior que 0 e menor que 21. Você deverá armazenar em um Array de números uma sequência de N (Que foi o número digitado pelo usuário) números pares, a partir do número 2. 
+
+    Exs: Usuário digitou 5
+    Deverá criar um Array contendo os números 2, 4, 6, 8 e 10.
+
+    Usuário digitou 3
+    Deverá criar um Array contendo os números 2 4 e 6. -->
+    <script>
+
+        // variavel
+        var a = [];
+        
+        // calculo
+        function num() {
+            idade = parseInt(prompt("Digite sua idade: "));//validar min e max
+            while(isNaN(idade) || idade <= 0 || idade >=21){
+                alert("Fora da faixa etária. Digite novamente!");
+                idade = parseInt(prompt("Digite sua idade: "));
+            }
+
+            for(cont=0; cont<idade; cont++){//guardar no array determinando como fim o número digitado.
+                a[cont] = 2*(cont+1);
+            }
+                alert("Anote o número de protocolo do seu agendamento: " +a+" .");
+                while(a.length){ //para limpar o array salvo, pois quando o usuário digitar de novo, vai receber os novos números (Ive ensinou)
+                a.pop(); //vai retirar do array o que foi colocado por último.
+              }
+            }
+    </script>
+
+    <style>
+        .principal{
+            background-color: rgb(213, 252, 239);
+            border-radius: 15px;
+            font-size: 28px;
+            height: auto;
+            line-height: 1.5;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        .border{
+            border: 1px solid rgb(13, 78, 13);
+            border-radius: 15px;
+            margin: 10px;
+        }
+        h1{
+            color: rgb(21, 37, 4);
+            font-size: 35px;
+            text-shadow: 1px 1px 3px rgb(42, 43, 42);
+        }
+        input{
+            background-color: green;
+            border: none;
+            border-radius: 10px;
+            color: wheat;
+            font-size: 20px;
+            height: 40px;
+            margin-bottom: 30px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="border">
+            <header>
+                <caption>
+                    <h1>Vacinação Covid-19 💉</h1>
+                </caption>
+            </header>
+            <main>
+                <p>A vacinação para a faixa etária de <strong>1 á 20 ANOS</strong> começou.
+                    Clique no botão abaixo e confirme sua idade. Logo após
+                    a confirmação, será gerado um número de protocolo.
+                </p> 
+                    <form>
+                        <input type="button" onclick="num()" value="Verificar"></button>
+                    </form>
+            </main>
+        </div>            
+    </div>
+</body>
+</html>

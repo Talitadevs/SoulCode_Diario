@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e Menor</title>
+    <script>
+        
+        var n1 = 20; 
+        var n2 = 37; 
+        var n3 = 40;
+        var maior;
+        var menor;
+        document.write("Números inteiros: ", n1, ", ", n2, ", ", n3, ".", "</br>", "</br>", )
+
+        // maior
+        if(n1 > n2 && n1 > n3){
+            maior = n1;
+        }else if(n2 > n1 && n2 > n3){
+            maior = n2;
+        }else{
+            maior = n3;
+        }
+        document.write("Maior número: ", maior, ".", "</br>");
+
+        // menor
+        if(n1 < n2 && n1 < n3){
+            menor = n1;
+        }else if(n2 < n1 && n2 < n3){
+            menor = n2;
+        }else{
+            menor = n3;
+        }
+        document.write("Menor número: ", menor, ".");
+        
+        
+    </script>
+</head>
+<body>
+    <!-- Faça um script que leia três números inteiros, em seguida mostre o maior e o menor deles. -->
+</body>
+</html>

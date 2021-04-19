@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para classificação de alunos</title>
+    <script>
+        // Notas
+        notaA1 = ["Maria - ", 7,7,6];
+        notaA2 = ["Pedro - ", 2,4,5];
+        notaA3 = ["João - ", 10,10,9];
+
+        // Médias
+        mediaA1 = (notaA1[0] , notaA1[1] + notaA1[2] + notaA1[3])/3;
+        mediaA2 = (notaA2[0] , notaA2[1] + notaA2[2] + notaA2[3])/3;
+        mediaA3 = (notaA3[0] , notaA3[1] + notaA3[2] + notaA3[3])/3;
+
+        // Maria
+        if (mediaA1 >= 7){
+            document.write(notaA1[0]," Aprovada.","</br>");
+        }else if (mediaA1 < 4){
+            document.write(notaA1[0]," Reprovada.","</br>");
+        }else{
+            document.write(notaA1[0]," Em recuperação.", "</br>");
+        } 
+
+        // Pedro
+        if (mediaA2 >= 7){
+            document.write(notaA2[0]," Aprovado.", "</br>");
+        }else if (mediaA2 < 4){
+            document.write(notaA2[0]," Reprovado.", "</br>");
+        }else{
+            document.write(notaA2[0]," Em recuperação.", "</br>");
+        }  
+
+        // João
+        if (mediaA3 >= 7){
+            document.write(notaA3[0]," Aprovado.", "</br>");
+        }else if (mediaA3 < 4){
+            document.write(notaA3[0]," Reprovado.", "</br>");
+        }else{
+            document.write(notaA3[0]," Em recuperação.", "</br>");
+        } 
+    </script>
+</head>
+<body>
+    <!-- Uma escola está precisando criar um sistema que exiba na tela a situação dos alunos com relação a aprovação. Crie um script com os seguintes criterios: 
+1- os alunos tem 03 notas;
+2 - Você deverá fazer a média entre as três notas;
+3 - Se a media for maior que 7 exiba na tela "aprovado";
+4- Se a media for menor que 7 exiba na tela "em recuperação";
+5 - Se media for menor que 4 "reprovado".
+6 - Atribua nome aos alunos e inclua junto a exibição da classificação.
+Obs.: Faça este processo para 03 alunos e enquadre cada um nas situações acima.. -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com as estruturas de repetição 1</title>
+    <script>
+    
+    // variáveis
+    var maior = 0;
+    var menor = 6.0;
+    alt = []; //criei array para guardar o nº a cada loop.
+
+    for(a=0; a<15; a++){
+        alt[a]=parseFloat(prompt("Digite a altura: "+a));//"a" muda nº na msn.
+        if(alt[a] > maior){
+            maior = alt[a];
+        }
+        if(alt[a] < menor){
+            menor = alt[a]
+        }
+    }
+    document.write("Alturas digitadas: " +alt+ "</br>", "</br>", "Maior altura: " +maior+ ".", "</br>", "Menor altura: ",+menor+ ".");
+    </script>
+    
+</head>
+<body>
+<!-- 1 - 
+Desenvolver um algoritmo que leia a altura de 15 pessoas. 
+Este programa deverá calcular e mostrar :
+a. A menor altura do grupo; 
+b. A maior altura do grupo;-->
+</body>
+</html>

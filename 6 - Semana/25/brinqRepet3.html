@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com as estruturas de repetição 3</title>
+    <script>
+    // variáveis para guardar a contagem dos dados
+        var a = 0;
+        one = 0;
+        two = 0;
+        three = 0;
+        four = 0;
+    
+    // cálculo
+        while(a < 10){
+            a++;
+            dado = parseInt(prompt("Digite 10 números aleatórios: "));
+            if(dado <0){
+                alert("Numero negativo.")
+            }
+            else if(dado >0 && dado <= 25){
+                one++;
+            }else if(dado >25 && dado <= 50){
+                two++;
+            }else if(dado >50 && dado <= 75){
+                three++;
+            }else if(dado >75 && dado <=100){
+                four++
+            }          
+        }
+        document.write("10 números digitados aleatoriamente!", "</br>", "</br>", "Intervalo de 0-25: ", one, ".", "</br>", "Intervalo de 26-50: ", two, ".", "</br>", "Intervalo de 51-75: ", three, ".", "</br>", "Intervalo de 76-100: ", four, ".")
+    </script>
+</head>
+<body>
+    <!-- 3 - 
+
+Escrever um algoritmo que leia 10 números e conte quantos deles
+estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. 
+A entrada de dados deve informar ao usuário quando o numero lido um número negativo. -->
+</body>
+</html>
