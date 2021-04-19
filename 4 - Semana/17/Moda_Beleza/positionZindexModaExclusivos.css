@@ -1,0 +1,143 @@
+/* Zerando a página */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o fundo do site */
+body{
+    background-image: url(backbody.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+ /* Div mãe de todas */
+ #principal{
+    background-image: linear-gradient(white,#FFC0CB, #FFB6C1, #FFA07A, #FA8072);
+    border-radius: 15px;
+    height: 530px;
+    margin-left: 65px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 1200px;
+ }
+
+/* Menu */
+#menu{
+    background-image: linear-gradient(rgb(243, 157, 207), pink);
+    border-radius: 15px 15px 0px 0px;
+    float: left;
+    font-size: 20px;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    width: 1200px;
+}
+
+   #menu ul li{
+       float: left;
+       list-style: none;
+       width: 100px;
+       padding: 12px 70px 12px 70px;
+   }
+
+   #menu ul li a{
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+       text-shadow: 5px 5px 10px rgb(143, 17, 95);
+   }
+
+/* Título da página */
+h2{
+    text-align: center;
+    font-family: caroline;
+    font-size: 60px;
+}
+@font-face{
+    font-family: caroline;
+    src: url(Moda_Beleza/Caroline.otf);
+}
+
+
+/* Descrição de cada imagem e a respectiva imagem*/
+#top1{
+    bottom: 20px;
+    position: relative;
+    right: 220px;
+    width: 200px;
+    z-index: 2;
+}
+#resultado1{
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 5px;
+    float: left;
+    height: 190px;
+    padding: 40px 20px 20px 50px;
+    position: relative;
+    top: 130px;
+    left: 50px;
+    width: 260px;
+    z-index: 1;
+}
+#top2{
+    bottom: 200px;
+    width: 200px;
+    position: relative;
+    right: 170px;
+    z-index: 1;
+}
+
+#resultado2{
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 5px;
+    bottom: 80px;
+    float: left;
+    height: 190px;
+    padding: 40px 20px 20px 50px;
+    position: relative;
+    left: 100px;
+    width: 260px;
+    z-index: 2;
+}
+#top3{
+    bottom: 350px;
+    width: 200px;
+    position: relative;
+    right: 130px;
+    z-index: 2;
+}
+#resultado3{
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 5px;
+    bottom: 246px;
+    float: left;
+    height: 190px;
+    padding: 40px 10px 20px 50px;
+    position: relative;
+    left: 140px;
+    width: 260px;
+    z-index: 1;
+}
+#preco{
+    text-decoration: line-through;
+    color: red;
+}
+
+/* Formulário */
+form{
+    background-color: rgb(230, 11, 113);
+    bottom: 300px;
+    height: 250px;
+    left: 65px;
+    line-height: 30px;
+    position: fixed;
+    text-align: center;
+    top: 420px;
+    width: 250px;
+    z-index: 5;
+}
+#comentario{
+    margin-top: 0px;
+}
+/* Feito por Talita Fernandes 30/03/21 */

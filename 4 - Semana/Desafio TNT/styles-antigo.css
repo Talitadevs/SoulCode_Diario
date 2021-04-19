@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 20px;
+}
+
+/*Header*/
+header{
+    border: 1px solid;
+    height: 80px;
+    width: 100%;
+}
+
+/* Menu */
+ul li{
+    float: right;
+    font-size: 30px;
+    list-style: none;
+    padding: 25px 70px 10px 10px;
+}
+ul li a{
+    text-decoration: none;
+}
+/* Main */
+main{
+    background-color: rgb(243, 190, 190);
+    height: 500px;
+}
+/* Conteúdo */
+#container{
+    background-color: white;
+    border: 1px solid;
+    height: 500px;
+    margin: 0 auto;
+    width: 60%;
+}
+    #div1{
+        border: 1px solid;
+        clip: rect();
+        height: 120px;
+        width: 100%;
+    }
+    #div2{
+        border: 1px solid;
+        display: flex;
+        height: 350px;
+        margin-top: 30px;
+        width: 100%;
+    }
+        #div2-1{
+            border: 1px solid;
+            height: 330px;
+            flex-grow: 1.5;
+            margin: 10px;
+        }
+        #div2-2{
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            height: 330px;
+            flex-grow: 1.2;
+            margin: 10px;
+
+        }
+            #div2-2-1{
+                border: 1px solid;
+                flex-grow: 1;
+                margin: 10px;
+            }
+            #div2-2-2{
+                border: 1px solid;
+                flex-grow: 1;
+                margin: 10px;
+            }
+        #div2-3{
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            height: 330px;
+            flex-grow: 1.5;
+            margin: 10px;
+        }
+            #div2-3-1{
+                border: 1px solid;
+                display: flex;
+                flex-grow: 1;
+                margin: 10px;
+            }
+            #div2-3-2{
+                border: 1px solid;
+                display: flex;
+                flex-grow: 1;
+                margin: 10px;
+            }
+            #div2-3-3{
+                border: 1px solid;
+                display: flex;
+                flex-grow: 1;
+                margin: 10px;
+            }
+            /* Tamanho das imagens: */
+            .col3Img{
+                border: 1px solid;
+                flex-grow: 1.6;
+                
+            }
+            /* Tamanho dos textos: */
+            .col3Text{
+                border: 1px solid;
+                flex-grow: 2;
+                overflow-y: scroll;
+
+            }
+
+
+/* Footer */
+footer{
+    border: 1px solid;
+    clear: both;
+    height: 60px;
+    width: 100%;
+}

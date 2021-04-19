@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio TNT</title>
+    <meta name="author" content="Marília Nunes, Pollyana Sousa e Talita Fernandes, 31 de Março de 2021">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <!--Aqui usamos o clear para o float das li's não atrapalharem o fluxo de outros possíveis elementos:-->
+            <ul clear id="topo">
+                <!--Aqui usamos o Float Right:-->
+                <li><a href="formulario.html">Inscreva-se</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Aqui usamos um position:fixed para fixar a imagem na tela:-->
+        <img class="fixo" src="img/logoTnt.png" alt="Logo TNT" />
+        <div id="container">
+            <div id="div1">
+                <img class="banner" src="img/banner.png" alt="Logo SoulCode % TNT" />
+            </div>
+            <!--Aqui usamos flexbox-->
+            <div id="div2">
+                <div id="div2-1">
+                    <img src="img/parceria.png" alt="SoulCode e TNT" id="parceria">
+                </div>
+                <!--Aqui criamos uma coluna a partir do flex-direction: column:-->
+                <div id="div2-2">
+                    <div id="div2-2-1">
+                        <h4 id="nos">SoulCode Academy + TNT Energy Drink</h4> <br>
+                        É necessário muita energia e muita resistência para codar. <br>
+                        E aí, quem vem?
+                        </div>
+                    <div id="div2-2-2">
+                        A TNT já veio e está apoiando esse projeto. Já a SoulCode, preparou um conteúdo 100% voltado para a inclusão digital e diversidade.
+                        </div>
+                </div>
+                <!--Aqui criamos uma coluna a partir do flex-direction: column:-->
+                <div id="div2-3">
+                    <div id="div2-3-1">
+                        <img class="col3Img" src="img/poly.jpeg" alt="Pollyana" />
+                        <!--Aqui usamos o overflow: scroll para criar controles de rolagem:-->
+                        <p class="col3Text">
+                            <em>Iniciar programação, em turma de Mulheres e ainda no dia Internacional das Mulheres! FOI MAIS QUE PERFEITO! Obrigada Soulcode e Parceiros por essa iniciativa e por acreditar que juntos podemos trazer mais profissionais qualificados para a área de TI e por contribuir com a participação feminina no setor. Amei meu kit ❤️. E vamos todos juntos nesse desafio.</em>
+                        </p>
+                    </div>
+                    <div id="div2-3-2">
+                        <img class="col3Img" src="img/marilia.jpg" alt="Marília Nunes" />
+                        <!--Aqui usamos o overflow: scroll para criar controles de rolagem:-->
+                        <p class="col3Text">Essa parceria da SoulCode com a TNT Energy Drink é um grande presente para mim. Estou realizando o sonho de estudar algo que sempre quis, com profissionais incríveis e gratuitamente! Isso dá um gás muito grande para me dedicar muito. ✨ Quero que tudo que eles estão fazendo por mim eu possa fazer de volta por eles um dia!</p>
+                    </div>
+                    <div id="div2-3-3">
+                        
+                        <img class="col3Img" src="img/talita.jpg" alt="Talita" />
+                        <!--Aqui usamos o overflow: scroll para criar controles de rolagem:-->
+                        <p class="col3Text">
+                            <em>Dia das mulheres inesquecível!
+                                Iniciando hoje o Bootcamp da #SoulCoder com o apoio mais que especial da #TNTEnergyDrink😍...muita honra de fazer parte desse projeto e mega feliz de dar o PLAY neste sonho!</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--Utilizamos Float Left para que todas as divs ficassem na mesma linha:-->
+        <div class="logo">
+            <img src="img/banner.png" alt="Logo SoulCode & TNT" />
+        </div>
+        <div class="footer-centro">
+            <a href="#topo">Voltar ao topo</a>
+            <div class="dados">
+                <a href="#">Termos e Condições</a>
+                <a href="#">Trabalhe Conosco</a>
+                <a href="#">Privacidade</a>
+            </div>
+        </div>
+        <div class="redes">
+            <img src="img/insta.png" alt="Instagram">
+            <img src="img/face.png" alt="Facebook">
+            <img src="img/youtube.png" alt="Youtube">
+        </div>
+    </footer>
+</body>
+<!--Leidiane Castelo Branco-->
+</html>

@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+}
+
+/*Header*/
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #e41b40;
+}
+
+/* Menu */
+ul li{
+    float: right;
+    font-size: 30px;
+    list-style: none;
+    padding: 25px 70px 10px 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fae7a2;
+}
+/* Main */
+main{
+    background-color: #fae7a2;
+    height: 600px;
+}
+/* Conteúdo */
+.fixo{
+    width: 10%;
+    position: fixed;
+    top: 255px;
+}
+#container{
+    background-color: #f8c100;
+    height: 600px;
+    margin: 0 auto;
+    width: 70%;
+}
+    #div1{
+        background-image: linear-gradient(to right, #e41b40, #3cb4c4, white, #f8c100);
+        height: 120px;
+        text-align: center;
+        width: 100%;
+    }
+    .banner{
+        height: 100%;
+    }
+    #div2{
+        display: flex;
+        height: 450px;
+        margin-top: 30px;
+        width: 100%;
+        background-color: white;
+    }
+        #div2-1{
+            height: 430px;
+            margin: 10px;
+            width: 35%;
+        }
+        #div2-1 img{
+            background-color: rgb(193, 207, 224);
+            border: unset;
+            border-radius: 10px;
+            box-shadow: 7px 7px 10px gray;
+            padding-top: 100px;
+            width: 300px;
+            
+        }
+        #div2-2{
+            display: flex;
+            flex-direction: column;
+            height: 430px;
+            margin: 10px;
+            width: 25%;
+
+        }
+            #div2-2-1{
+                margin: 10px;
+                height: 45%;
+                overflow: hidden;
+                text-align: justify;
+            }
+            #div2-2-2{
+                margin: 10px;
+                height: 45%;
+                overflow: hidden;
+                text-align: justify;
+            }
+            h4{
+                text-align: center;
+            }
+        #div2-3{
+            display: flex;
+            flex-direction: column;
+            height: 430px;
+            margin: 10px;
+            width: 35%;
+        }
+            #div2-3-1{
+                display: flex;
+                height: 27%;
+                margin: 10px;
+            }
+            #div2-3-2{
+                display: flex;
+                height: 27%;
+                margin: 10px;
+            }
+            #div2-3-3{
+                display: flex;
+                height: 27%;
+                margin: 10px;
+            }
+            /* Tamanho das imagens: */
+            .col3Img{
+                border-radius: 5px 0px 0px 5px;
+                width: 35%;
+                
+            }
+            /* Tamanho dos textos: */
+            .col3Text{
+                border: 1px solid;
+                border-radius: 0px 5px 5px 0px;
+                font-size: 18px;
+                overflow-y: scroll;
+                padding: 2px;
+                width: 65%;
+                padding: 10px;
+            }
+
+
+/* Footer */
+footer{
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #3cb4c4;
+    color: #fae7a2;
+    font-size: 20px;
+}
+footer a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fae7a2;
+}
+.dados{
+    margin-top: 10px;
+}
+footer img{
+    padding-left: 20px;
+    float: left;
+    height: 50px;
+}
+.footer-centro{
+    text-align: center;
+    float: left;
+    width: 67%;
+}
+footer .redes{
+    float: left;
+    height: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Form */
+#div2-form{
+    display: flex;
+    height: 450px;
+    width: 100%;
+    background-color: white;
+}
+.imagens-form{
+    width: 100%;
+}
+#codigo1{
+    position: absolute;
+    width: 50%;
+    clip: rect(59px 472px 302px 50px);
+}
+#codigo2{
+    position: absolute;
+    right: 120px;
+    width: 50%;
+    top: 358px;
+    z-index: 2;
+    clip: rect(33px 522px 274px 33px);
+}
+#imagens-form1{
+    width: 20%;
+}
+#imagens-form2{
+    width: 20%;
+}
+h1{
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+}
+form{
+    margin: 0 auto;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    z-index: 3;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#cidade, #estado{
+    width: 36%;
+}
+#cidade{
+    margin-right: 6px;
+}
+textarea{
+    width: 80%;
+    padding: 5px;
+    height: 120px;
+}
+button{
+    padding: 5px 10px;
+}

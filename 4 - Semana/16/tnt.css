@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 1%;
+}
+
+/* Configuração de tudo que é padrão */
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg,  #03C17B,#8DBD29, #FC863D, #FE7A62, #72035C, #272727);
+}
+
+main{
+    background-color: rgba(255,255,255,0.5);
+    width: 95%;
+    height: 830px;
+    border-radius: 15px;
+}
+
+section{
+    width: 20%;
+    height: 400px;
+}
+
+h2{
+    color: rgb(12, 12, 12);
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 10px;
+    box-shadow: 5px 2px 10px rgb(235, 115, 115);
+}
+
+h6{
+    font-size: 16px;
+}
+
+p{
+    font-size: 18px;
+}
+
+img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+/* Dimensionamento do tamanho da imagem e do box do TNT Original */
+#original{
+    float: right;
+    width: 30%;
+    height: 827px;
+}
+
+#imgOriginal{
+    height: 500px;
+    width: 100%;
+    vertical-align: top;
+}
+
+/* Dimensionamento do tamanho das demais imagens e blocos dos outros produtos */
+#acai, #citrus, #pessego{
+    float: left;
+}
+
+#maca{
+    clear: left;
+    float: left;
+}
+
+#tangerina, #zero{
+    float: left;
+    margin-bottom: 30px;
+}
+
+/* Rodapé */
+footer{
+    clear: both;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Feito por Talita Fernandes */

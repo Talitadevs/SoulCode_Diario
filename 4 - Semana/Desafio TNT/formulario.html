@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio TNT</title>
+    <meta name="author" content="Marília Nunes, Pollyana Sousa e Talita Fernandes, 31 de Março de 2021">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+             <!--Aqui usamos o clear para o float das li's não atrapalharem o fluxo de outros possíveis elementos:-->
+             <ul clear id="topo">
+                <!--Aqui usamos o Float Right:-->
+                <li><a href="formulario.html">Inscreva-se</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Aqui usamos um position:fixed para fixar a imagem na tela:-->
+        <img class="fixo" src="img/logoTnt.png" alt="Logo TNT" />
+        <div id="container">
+            <!--Aqui usamos o position: absolute para realocar a imagem e para usar o clip. Usamos clip e z-index aqui:-->
+            <div id="div1">
+                <img class="banner" src="img/banner.png" alt="Logo SoulCode % TNT" />
+            </div>
+            <h1>Inscreva-se!</h1>
+            <div id="div2-form">
+                <div id="imagens-form1">
+                    <img id="codigo1" class="imagens-form" src="img/codigo1.jpeg" />
+                </div>
+                <!--Usamos z-index aqui para o formulário ficar por cima das imagens:-->
+                <form>
+                    <input id="nome" type="text" placeholder="Nome Completo" size="40" required/>
+                    <input id="email" type="email" placeholder="Digite seu email" size="40" required/>
+                    <input id="cidade" type="text" placeholder="Digite sua cidade" required />
+                    <input id="estado" list="estados" required placeholder="Estado" />
+                            <datalist id="estados" name="estados">
+                                <option value="AL"></option>
+                                <option value="AP"></option>
+                                <option value="AM"></option>
+                                <option value="BA"></option>
+                                <option value="CE"></option>
+                                <option value="DF"></option>
+                                <option value="ES"></option>
+                                <option value="GO"></option>
+                                <option value="MA"></option>
+                                <option value="MT"></option>
+                                <option value="MS"></option>
+                                <option value="MG"></option>
+                                <option value="PA"></option>
+                                <option value="PB"></option>
+                                <option value="PR"></option>
+                                <option value="PE"></option>
+                                <option value="PI"></option>
+                                <option value="RJ"></option>
+                                <option value="RN"></option>
+                                <option value="RS"></option>
+                                <option value="RO"></option>
+                                <option value="RR"></option>
+                                <option value="SC"></option>
+                                <option value="SP"></option>
+                                <option value="SE"></option>
+                                <option value="TO"></option>
+                            </datalist>
+                    <input id="telefone" type="tel"  placeholder="1190000-0000" pattern="[0-9]{2}[0-9]{4,6}-[0-9]{3,4}$" size="16"/>
+                    <input list="sobre" required placeholder="Como ficou sabendo do projeto" size="19" />
+                    <datalist id="sobre" name="sobre">
+                        <option value="Amigos"></option>
+                        <option value="Anúncios"></option>
+                        <option value="Indicação"></option>
+                        <option value="Site"></option>
+                        <option value="Facebook"></option>
+                        <option value="Instagram"></option>
+                    </datalist>
+                    <textarea name="comentario" id="comentario" cols="42" rows="10" placeholder="Deixe aqui seu comentário"></textarea>
+                    <br />
+                    <button type="submit">Enviar</button>
+                </form>
+                <!--Aqui usamos o position: absolute para realocar a imagem e para usar o clip. Usamos clip e z-index aqui:-->
+                <div id="imagens-form2">
+                    <img id="codigo2" class="imagens-form" src="img/codigo2.jpg" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="img/banner.png" alt="Logo SoulCode & TNT" />
+        </div>
+        <div class="footer-centro">
+            <a href="#topo">Voltar ao topo</a>
+            <div class="dados">
+                <a href="#">Termos e Condições</a>
+                <a href="#">Trabalhe Conosco</a>
+                <a href="#">Privacidade</a>
+            </div>
+        </div>
+        <div class="redes">
+            <img src="img/insta.png" alt="Instagram">
+            <img src="img/face.png" alt="Facebook">
+            <img src="img/youtube.png" alt="Youtube">
+        </div>
+    </footer>
+</body>
+<!--Leidiane Castelo Branco-->
+</html>

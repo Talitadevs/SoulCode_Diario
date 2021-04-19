@@ -1,0 +1,338 @@
+/* Zerando margin e pedding do browser */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Dimensões do site*/
+#site{
+    background-image: url(img/rede.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*Header - Logomarca, banner e ilustração*/
+header{
+     height: 140px;
+     width: 100%;
+}
+    #logomarca{
+        background-image: linear-gradient(yellow 60%, black);
+        float: left;
+        height: 140px;
+        position: relative;
+        width: 15%;
+    }
+    #imgLogo{
+        position: absolute;
+        margin-left: 35px;
+        width: 65%;
+    }
+    #banner{
+        background-image: linear-gradient(yellow 60%, black);
+        float: left;
+        height: 140px;
+        line-height: 50px;
+        text-align: center;
+        width: 70%;
+    }
+        #banner h1{
+            font-family: hello honey;
+            font-size: 90px;
+            padding-top: 40px;
+            padding-bottom: 15px;
+        }
+        @font-face{
+            font-family: hello honey;
+            src: url(img/hello\ honey.otf);
+        }
+        
+    #ilustrativa{
+        background-image: linear-gradient(yellow 60%, black);
+        float: left;
+        height: 140px;
+        position: relative;
+        width: 15%;
+    }
+        #ilustrativa img{
+            position: absolute;
+            width:70%;
+            }
+
+/*Header - Menu*/
+    #menu{
+        position: sticky;
+        top: 0;
+    }
+    #menu ul{
+        background-image: linear-gradient(black, rgb(17, 17, 17));
+        clear: both;
+        display: flex;
+        height: 60px;
+        list-style: none;
+    }
+        #menu ul li{
+            padding: 20px 30px 20px 30px;
+        }
+        #menu ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+/* Main */
+main{
+    margin-left: 2%;
+}
+
+/*Conteúdo coluna 1 de 3*/
+#left{
+    background-color: rgba(212, 212, 209, 0.9);
+    clear: left;
+    float: left;
+    height: 795px;
+    margin-top: 42px;
+    width: 200px;
+}
+    #leftTop{
+        float:left;
+        height: 400px;
+        width: 198px;
+    }
+        #leftTop h4{
+            margin: 10px 10px 30px 10px;
+            text-align: center;
+        }
+        #leftTop h6{
+            margin: 10px;
+        }
+        #mara, #alzira{
+            width: 100%;
+        }
+    #leftBottom{
+        float:left;
+        height: 400px;
+        width: 198px;
+    }
+        #leftBottom h6{
+            margin: 10px;
+        }
+        #monica, #maria{
+            width: 100%;
+        }
+
+/* Conteúdo coluna 2 de 3 */
+#middle{
+        background-color: rgba(255, 255, 255, 0.9);
+        background-repeat: no-repeat;
+        background-size: contain;
+        float: left;
+        height: 795px;
+        margin-top: 42px;
+        width: 900px;
+    }
+        #middleTop{
+            float: left;
+            height: 200px;
+            width: 900px;
+            }
+            #middleTop h3{
+                font-size: 30px;
+                margin: 10px 25px 10px 25px;
+                text-align: center;
+                text-shadow: 2px 2px 3px grey;
+                word-spacing: 3px;
+            }
+            #middleTop p{
+                padding: 25px;
+            }
+
+        #middleCenter{
+            float: left;
+            height: 390px;
+            margin-left: 50px;
+            width: 900px;
+        }
+            #contentLeft{
+                float: left;
+                height: 270px;
+                margin-top: 50px;
+                margin-left: 25px;
+                position: relative;
+                width: 200px;
+            }
+                #cleusa{
+                    background-color: #ffe0e0;
+                    box-shadow: 5px 5px 10px grey;
+                    border-radius: 5px;
+                    position: absolute;
+                    width: 100%;
+                }
+                #contentLeft p{
+                    font-size: 12px;
+                    text-align: left;
+                }
+                #contentMiddle{
+                    float: left;
+                    height: 390px;
+                    margin-left: 25px;
+                    width: 295px;
+                }
+                    #contentMiddleTop{
+                    background-color: #F08080;
+                    background-image: url(img/luiza.jpg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 10px grey;
+                    float: left;
+                    height: 150px;
+                    margin-top: 25px;
+                    width: 100%;
+                    }
+                        #contentMiddleTop p{
+                            font-size: 12px;
+                            padding:  0px 5px 5px 5px;
+                            text-align: right;
+                        }
+                        #contentMiddleTop h4{
+                            padding:  5px 5px 0px 0px;
+                            text-align: right;
+                        }
+                    #contentMiddleBottom{
+                        background-color: #d1e9cb;
+                        background-image: url(img/zica1.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px 10px grey;
+                        float: left;
+                        height: 150px;
+                        margin-top: 25px;
+                        width: 100%
+                        }
+                        #contentMiddleBottom p{
+                            padding:  0px 5px 5px 5px;
+                            font-size: 12px;
+                            text-align: left;
+                        }
+                        #contentMiddleBottom h4{
+                            padding:  5px 5px 0px 5px;
+                            text-align: left;
+                        }                   
+            #contentRight{
+                float: left;
+                height: 300px;
+                margin-top: 50px;
+                margin-left: 25px;
+                position: relative;
+                width: 200px;
+            }
+                #nat{
+                    background-color: #E0FFFF;
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 10px grey;
+                    margin-top: 10px;
+                    position: absolute;
+                    width: 100%;
+                }
+                #contentRight p{
+                    font-size: 12px;
+                }
+        #middleBottom{
+            position: relative;
+        }
+            #middleBottom h2{
+                clear: both;
+                color: rgb(92, 92, 5);
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            #form1{
+                float: left;
+                padding: 15px;
+                margin-left: 10px;
+                position: absolute;
+                width: 50%;
+            }
+                #form1 input{
+                    margin-bottom: 6px;
+                    padding: 7px;
+                }
+            #form2{
+                float: right;
+                margin-left: 49%;
+                padding: 15px;
+                position: absolute;
+                width: 50%;
+            }      
+    
+/* Conteúdo coluna 3 de 3 */
+#right{
+    background-color: rgba(212, 212, 209, 0.9);
+    float: left;
+    height: 795px;
+    margin-top: 42px;
+    width: 198px;
+}
+    #rightTop{
+        float:left;
+        height: 400px;
+        width: 198px;
+    }
+        #rightTop h4{
+            margin: 10px;
+            text-align-last: center;
+        }
+        #rightTop p{
+            margin: 10px;
+        }
+        #rightTop ol{
+            line-height: 28px;
+            padding-left: 30px;
+        }
+        #rightBottom{
+            float:left;
+            height: 390px;
+            position: relative;
+            width: 198px;
+            word-wrap: break-word;
+        }
+            #rightBottom h4{
+                margin-bottom: 10px;
+                text-align-last: center;
+            }
+            #rightBottom p{
+                margin: 10px;
+            }
+            #rightBottomImg{
+                clear: both;
+                position: absolute;
+                margin-top: 4px;
+                width: 100%;
+            }
+    
+/* Rodapé */
+footer{
+    clear: both;
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 100%;
+}
+    footer a{
+        color: white;
+        display: flex;
+        float: left;
+        padding: 30px;
+        text-decoration: none;
+    }
+    .redes{
+        float: left;
+        height: 35px;
+        padding: 20px 5px 0px 0px;
+    }
+    /* Talita Fernandes */

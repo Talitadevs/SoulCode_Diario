@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fixo</title>
+    <style>
+#container {
+    margin: 0 auto; /* centrar o layout horizontalmente */
+    width: 960px;
+}
+#header {
+    width: 100%; /* para garantir que ocupa todo o espaço disponível no container */
+    background-color: #A0A0A0;
+}
+#sidebar {
+    width: 330px;
+    float: left;
+    display: inline; /* hack para resolver problemas de margin duplicada no IE 5/6 */
+    background-color: #787878;
+}
+#content {
+    width: 600px; /* 960px - 330px = 600px os 30px que faltam são para separar as colunas */
+    float: right; /* para alinhar à direita */
+    display: inline; /* hack para resolver problemas de margin duplicada no IE 5/6 */
+    background-color: #787878;
+}
+#footer {
+    width: 100%;
+    clear: both; /* para garantir que é mostrado depois das duas colunas anteriores (content e sidebar) */
+    background-color: #A0A0A0;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <!-- cabeçalho, navegação e etc -->
+            <h1>Cabeçalho (#header)</h1>
+        </div>
+        <div id="sidebar">
+            <!-- barra lateral -->
+            <h2>Barra Lateral (#sidebar)</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div id="content">
+            <!-- conteudo principal -->
+            <h2>Conteúdo Principal (#content)</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent ut dolor non est euismod euismod eu eu risus.
+                Vestibulum vulputate rhoncus lectus, vitae varius arcu imperdiet nec.
+                In nec sem venenatis velit pretium mattis. In ac enim eu lacus dictum pretium sit amet laoreet ipsum.
+                Quisque fermentum ligula tellus, sit amet tristique tortor. Proin et dolor leo.</p>
+        </div>
+        <div id="footer">
+            <!-- rodapé com informação do site -->
+            <h2>Rodapé</h2>
+            <p>Alguma informação sobre o site</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

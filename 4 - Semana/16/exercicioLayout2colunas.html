@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício layout com duas colunas</title>
+    <!--Reproduzir a imagem passada no Jamboard-->
+    <style>
+        div{
+            height: 400px;
+            width: 600px;
+            margin: auto;
+            color: white;
+            font-size: 25px;
+        }
+        #header{
+            background-color: red;
+            height: 30px;
+            width: 590px;
+            margin-bottom: 6px;
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+        #corpo{
+            height: 300px;
+            width: 600px;
+        }
+        #conteudo{
+            background-color: gray;
+            float: left;
+            width: 384px;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+        #sidebar{
+            background-color: gray;
+            float: left;
+            width: 190px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+        #footer{
+            clear: both;
+            background-color: red;
+            height: 40px;
+            width: 590px;
+            padding-left: 10px;
+            padding-top: 3px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header">Header</div>
+        <div id="corpo">
+            <div id="conteudo">Conteúdo</div>
+            <div id="sidebar">Sidebar</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilização padrão do body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Dimensões do nosso jornal */
+#jornal{
+    background-color: rgb(226, 213, 196);
+    box-shadow: 4px 4px 10px gray;
+    height:1115px ;
+    margin: 3% 13% 3% 13%;
+    width:1000px;
+}
+
+/* Formatações do Header*/
+header{
+    font-size: 70px;
+    height: 150px;
+    text-align: center;
+    width: 1000px;       
+}
+@font-face{
+    font-family: klaber;
+    src: url(fonte/KlaberFraktur.ttf);
+}
+h1{
+    color: #580431;
+    font-family: klaber;
+    letter-spacing: 4px;
+}
+
+/* Conteúdo parte superior */
+#div1{
+    height: 450px;
+    margin-top: 50px;
+    width: 1000px;
+    
+}
+
+/* Primeira coluna da parte superior */
+    #div1-1{
+        float: left;
+        height: 400px;
+        width:200px;
+    }
+
+    #div1-1 h2{
+        color: #6E003B;
+        letter-spacing: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        text-align: center;
+        text-shadow: 2px 2px 5px gray;
+    }
+
+    #div1 h3{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #div1-1 p{
+        padding: 12px;
+        text-align: justify;
+    }
+
+/* Segunda coluna da parte superior */
+    #div1-2{
+        background-color: black;
+        border-radius: 5px;
+        float: left;
+        height: 400px;
+        width:785px;
+    }
+
+    #div1-3{
+        color: white;
+        font-size: 16px;
+        font-style: italic;
+        height: 100px;
+        left: 380px;
+        position: absolute;
+        top: 593px;
+        width:250px;
+    }
+
+    img{
+        margin-top: 65px;
+        width: 785px;
+    }
+
+/* Conteúdo parte inferior */
+#div2{
+    height: 450px;
+    width: 1000px;
+}
+
+    #div2-1{
+        float: left;
+        height: 400px;
+        width:200px
+    }
+
+    #div2-1 h3{
+        padding: 12px;
+    }
+
+    #div2-1 p{
+        padding: 12px;
+        text-align: justify;
+    }
+
+    #div2-2{
+        background-color: rgb(241, 203, 131);
+        border-radius: 5px;
+        float: left;
+        height: 400px;
+        padding: 12px;
+        text-align: justify;
+        width:140px
+    }
+
+    #div2-2 #horario{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    #div2-2 a{
+        font-size: 25px;
+        color: black;
+    }
+
+    #div2-3-1{
+        float: left;
+        height: 200px;
+        width:630px;
+    }
+
+    #div2-3-1 h2{
+        color: #6E003B;
+        font-size: 45px;
+        line-height: 60px;
+        text-shadow: 2px 2px 5px gray;
+    }
+
+    #div2-3-1 img{
+        float: left;
+        margin: 0;
+        vertical-align: top;
+        width: 170px;
+    }
+
+    #div2-3-2{
+        float: left;
+        height: 30px;
+        padding: 12px 0px 0px 12px;
+        text-align: justify;
+        width:617px
+    }
+
+    #div2-3-3, #div2-3-4,#div2-3-5, #div2-3-6{
+        float: left;
+        height: 166px;
+        padding: 12px 5px 0px 12px;
+        text-align: justify;
+        width:138px;
+    }
+
+/* Rodapé */
+footer{
+    background-color: rgb(158, 158, 158);
+    clear: both;
+    font-size: 16px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    width: 1000px;
+}
