@@ -1,0 +1,123 @@
+/* zerando margin e padding dos browsers */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* menu
+    z-index: para ser superior aos demais elementos que também usam z-index.
+    displey flex: para posicionar os links lado a lado.
+    position sticky: para o menu se fixar na página.
+    */
+.menu{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.menu ul{
+    background-color: rgb(26, 65, 26);
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    list-style: none;
+    padding: 3%;
+}
+.menu ul li{
+    width: 100%;
+}
+.menu ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: rgb(73, 241, 31);
+}
+
+
+
+
+
+/* inserindo imagem de fundo */
+body {
+    background-image: url(montain.jpg);
+    background-size: cover;
+}
+
+/* estilizando o corpo do conteúdo através do main */
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    width: 60%;
+}
+
+/* inserção de fonte baixada, estilização e posicionamento dos títulos*/
+@font-face {
+    font-family: caroline;
+    src: url(Caroline.otf);
+}
+h1 {
+    color: rgb(6, 61, 23);
+    font-family: caroline;
+    font-size: 60px;
+    text-align: center;
+}
+h2{
+    background-color: green;
+    border-radius: 0px 0px 15px 15px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px rgb(78, 78, 78);
+    left: 22%;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+}
+/* padronização tamanho das imagens */
+img{
+    border-radius: 25px;
+    width: 40%;
+    float: left;
+    padding: 20px;
+    margin-top: 0;;
+    z-index: 1;
+}
+/* utilizado display flex e float para posicionar os elementos */
+#container{
+    display: flex;
+}
+#bar, #praca, #cachoeiras, #gente{
+    float: left;
+    margin: 10px;
+    padding: 0px 20px 20px 20px;
+}
+#enfim{
+    clear: both;
+}
+#bar, #cachoeiras{
+    background-color: rgb(203, 245, 201);
+    border-radius: 5px;
+}
+#praca, #gente{
+    border: 1px solid green;
+    border-radius: 5px;
+}
+/* Rodapé  */
+footer{
+    background-color: rgb(54, 54, 54);
+    color: rgb(161, 159, 159);
+    font-size: 18px;
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer a{
+    color: white;
+}

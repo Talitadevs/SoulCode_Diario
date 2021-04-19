@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 2</title>
+    <style>
+        #container div{
+            border: 1px solid #ED3E44;
+            box-shadow: 
+                -1px 1px 0px #ED3E44,
+                -2px 2px 0px #ED3E44,
+                -3px 3px 0px #ED3E44,
+                -4px 4px 0px #ED3E44,
+                -5px 5px 0px #ED3E44,
+                -6px 6px 0px #ED3E44,
+                -7px 7px 0px #ED3E44,
+                -8px 8px 0px #ED3E44,
+                -9px 9px 0px #ED3E44,
+                -10px 10px 0px #ED3E44,
+                -11px 11px 0px #ED3E44,
+                -12px 12px 0px #ED3E44; 
+        }
+        #container{
+            border: none;
+            
+            display: grid;
+            gap: 20px;
+            grid-auto-rows: 150px;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        #div5{
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+        #div6{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #div7{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        #div12{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        #div13{
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+        <div id="div7"></div>
+        <div id="div8"></div>
+        <div id="div9"></div>
+        <div id="div10"></div>
+        <div id="div11"></div>
+        <div id="div12"></div>
+        <div id="div13"></div>
+    </div>
+    
+</body>
+</html>

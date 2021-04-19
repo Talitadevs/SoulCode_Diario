@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid + Flexbox</title>
+    <style>
+        /* *{
+            margin: 0 auto;
+            padding: 0 auto;
+        } */
+        div{
+            background-color: rgb(189, 231, 210);
+        }
+        h1{
+            color: rgb(250, 1, 125);
+            font-size: 40px;
+            margin-top: 80px;
+            text-align: center;
+        }
+      
+        #container{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 320px;
+        }
+        #janela{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        #janela img{
+            width: 100%;
+        }
+        #quadro{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        #quadro img{
+            height: 90%;
+        }
+        #porta{
+            display: flex;
+            flex-direction: row-reverse;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #porta img{
+            height: 100%;
+        }
+        #sofa{
+            display: flex;
+            justify-content: center;
+            width: 160%;
+            z-index: 2;
+        }
+        #abajour{
+            align-items: flex-end;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            z-index: 1;
+        }
+        #abajour img{
+            height: 230px;
+            width: 35%;
+        }
+        #tapete{
+            display: flex;
+            align-items: baseline;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #tapete img{
+            margin-left: 150px;
+            width: 80%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <head>
+            <caption>
+                <h1>Espaço dos móveis criado com Grid e móveis organizados com Flexbox</h1>
+            </caption> 
+        </head>
+
+        
+        <div id="container">
+            <div id="janela">
+                <img src="img/janela.png" alt="Janela">
+            </div>
+            <div id="quadro">
+                <img src="img/quadro.JPG" alt="Quadro">
+            </div>
+            <div id="porta">
+                <img src="img/porta.JPG" alt="Porta">
+            </div>
+            <div id="sofa">
+                <img src="img/sofa.JPG" alt="Sofá">
+            </div>
+            <div id="abajour">
+                <img src="img/abajour.JPG" alt="Abajour">
+            </div>
+            <div id="tapete">
+                <img src="img/tapete.JPG" alt="Tapete">
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

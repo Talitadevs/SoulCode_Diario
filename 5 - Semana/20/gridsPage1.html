@@ -1,0 +1,93 @@
+<!-- Crie uma pagina que tenha os seguintes requisitos:
+Pagina 1
+1. Grid com 4 colunas sendo uma de tamanho absoluto(213px) e as outras fracionadas ou auto
+2. Contenha 15 "box" com background-color (no minimo duas cores diferentes) e borda
+3. Enumere os itens em espanhol -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids page 1</title>
+    <style>
+        div{
+            border: 1px solid;
+            border-style: double;
+            color: white;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 213px repeat(3, 1fr);
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 80%;
+        }
+        #div1{
+            background-color: #f1dbf9;
+        }
+        #div2{
+            background-color: #e1b7f2;
+        }
+        #div3{
+            background-color: #d193eb;
+        }
+        #div4{
+            background-color: #be6fe3;
+        }
+        #div5{
+            background-color: #aa46db;
+        }
+        #div6{
+            background-color: #9400d3;
+        }
+        #div7{
+            background-color: #7b10ac;
+        }
+        #div8{
+            background-color: #621587;
+        }
+        #div9{
+            background-color: #4a1564;
+        }
+        #div10{
+            background-color: #331343;
+        }
+        #div11{
+            background-color: #1e0f24;
+        }
+        #div12{
+            background-color: #110814 ;
+        }
+        #div13{
+            background-color: #1d0d22;
+        }
+        #div14{
+            background-color: #130816;
+        }
+        #div15{
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="container">
+        <div id="div1">uno</div>
+        <div id="div2">dos</div>
+        <div id="div3">tres</div>
+        <div id="div4">cuatro</div>
+        <div id="div5">cinco</div>
+        <div id="div6">seis</div>
+        <div id="div7">siete</div>
+        <div id="div8">ocho</div>
+        <div id="div9">nueve</div>
+        <div id="div10">diez</div>
+        <div id="div11">once</div>
+        <div id="div12">doce</div>
+        <div id="div13">trece</div>
+        <div id="div14">catorce</div>
+        <div id="div15">quince</div>
+    </div>   
+</body>
+</html>

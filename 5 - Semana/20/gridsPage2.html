@@ -1,0 +1,66 @@
+<!-- Crie uma pagina que tenha os seguintes requisitos:
+Pagina 2
+1. Grid com colunas sendo uma de tamanho absoluto(213px) e as outras fracionadas ou auto com padrão de repetição
+2. Tamanho das linhas com no minimo 50px e max auto
+3.Contenha 8 "box" , borda e enumere os itens em italiano -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids page 2</title>
+    <style>
+        div{
+            border: 1px solid;
+            color: white;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: 213px auto;
+            grid-auto-rows: minmax(50px, auto);
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 80%;
+        }
+        #div1{
+            background-color: #f1dbf9;
+        }
+        #div2{
+            background-color: #e1b7f2;
+        }
+        #div3{
+            background-color: #d193eb;
+        }
+        #div4{
+            background-color: #be6fe3;
+        }
+        #div5{
+            background-color: #aa46db;
+        }
+        #div6{
+            background-color: #9400d3;
+        }
+        #div7{
+            background-color: #7b10ac;
+        }
+        #div8{
+            background-color: #621587;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div id="container">
+        <div id="div1">uno</div>
+        <div id="div2">dos</div>
+        <div id="div3">tres</div>
+        <div id="div4">cuatro</div>
+        <div id="div5">cinco</div>
+        <div id="div6">seis</div>
+        <div id="div7">siete</div>
+        <div id="div8">ocho</div>
+    </div>   
+</body>
+</html>

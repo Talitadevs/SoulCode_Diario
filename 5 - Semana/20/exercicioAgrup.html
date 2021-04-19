@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando agrupamento</title>
+    <style>
+        div{
+            border: 1px solid;
+        }
+        #container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        
+        }
+        #div1{
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #div3{
+            grid-column-start: 2;
+            grid-column-end: 8;
+        }
+        #div7{
+            grid-column-start: 7;
+            grid-column-end: 8;
+        }
+      
+        
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+        <div id="div6">6</div>
+        <div id="div7">7</div>
+    </div>
+    
+</body>
+</html>
