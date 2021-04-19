@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrando elementos com DOM - 5</title>
+    <!-- use HTML DOM para alterar o valor do campo de entrada -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(fundo.jpg);
+            background-size: cover;
+        }
+        img{
+            border-radius: 15px;
+            margin: 70px 100px 0px 400px;
+        }
+        input{
+            border: none;
+            border-radius: 15px;
+            font-size: 30px;
+            margin: 20%;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function text(){
+           document.getElementById("myText").value="Tenha um bom dia!";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="myText" value="Hello" onclick="text()" size="50">
+</body>
+</html>

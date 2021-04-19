@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrando elementos com DOM - 6</title>
+    <!--Altere a cor do texto do <p> elemento para vermelho -->
+        <script>
+            function ola(){
+               var element = document.getElementById('demo');
+               element.innerHTML= "Olá!";
+            }
+        </script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(fundo.jpg);
+                background-size: cover;
+            }
+            p{
+                background-color: rgb(235, 163, 202);
+                color: white;
+                font-size: 30px;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>    
+    <script>
+        function text(){
+           document.getElementById("demo").style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <p id="demo" onclick="text()">Clique, e o texto aparecerá com a cor vermelha</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altearndo Cor</title>
+    <!-- 1) Crie um script que contenha 3 campos de formulario(text) , onde será aplicado via eventos as definições abaixo
+. Ao selecionar um campo o mesmo deve ter a cor verde
+. Ao sair do campo o mesmo deve ficar com a cor vermelha -->
+    <script>
+      
+        function dentro1(){
+            document.getElementById("put1").style.backgroundColor = 'green';
+        }
+        function fora1_1(){
+            document.getElementById("put1").style.backgroundColor = 'red';
+        }
+
+        function dentro2(){
+            document.getElementById("put2").style.backgroundColor = 'green';
+        }
+        function fora2_1(){
+            document.getElementById("put2").style.backgroundColor = 'red';
+        }
+
+        function dentro3(){
+            document.getElementById("put3").style.backgroundColor = 'green';
+        }
+        function fora3_1(){
+            document.getElementById("put3").style.backgroundColor = 'red';
+        }
+        
+    </script>
+    <style>
+        form{
+            border-radius: 15px;
+            margin: auto;
+            width: 30%;
+        }
+        input{
+            margin: 10px;
+            padding: 7px;
+            text-align: center;
+        }
+        label{
+            padding: 30px;
+        }
+      
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Nome</label>
+        <input type="text" name="nome" size="40" onclick="dentro1()" onmouseout="fora1_1()" id="put1"><br>
+        
+        <label for="prof">Profissão</label>
+        <input type="text" name="prof" size="40"onclick="dentro2()" onmouseout="fora2_1()" id="put2"><br>
+        
+        <label for="int">Interesses</label>
+        <input type="text" int="nome" size="40" onclick="dentro3()" onmouseout="fora3_1()" id="put3"><br>
+    </form>
+</body>
+</html>

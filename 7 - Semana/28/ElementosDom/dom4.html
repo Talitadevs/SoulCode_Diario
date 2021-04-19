@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrando elementos com DOM - 4</title>
+    <!-- use HTML DOM para alterar o valor do atributo src da imagem -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(fundo.jpg);
+            background-size: cover;
+        }
+        img{
+            border-radius: 15px;
+            margin: 70px 100px 0px 400px;
+        }
+    </style>
+    <script>
+        function ola(){
+           document.getElementById("image").src="2.gif";
+        }
+    </script> 
+</head>
+<body>
+    <img id="image" src="1.gif" onclick="ola()"></p>
+</body>
+</html>
