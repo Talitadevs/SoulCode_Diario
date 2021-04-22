@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserção no Array</title>
+    <script>
+        //foi criado array de 5 espaços e ocupamos somente 4. Não é uma boa prática, pois ocupa memória sem necessidade.
+        
+        //Inserindo no fim do array(não ocupa espaço vazio) ----------------------------------------------------
+        vetor= Array(5); 
+
+        for(let i=0; i<4; i++){
+            vetor[i] = i;
+        }
+        vetor.push(10);
+
+        //inserindo no array sem deixar espaço vazio---------------
+        vetor= Array(); 
+
+        for(let i=0; i<4; i++){
+            vetor[i] = i;
+        }
+        vetor.push(10);
+
+        //inserindo no inicio do array--------------
+        vetor= Array(); 
+
+        for(let i=0; i<4; i++){
+            vetor[i] = i;
+        }
+        vetor.unshift("a","b");
+
+        //exclusão do último item do array(ele mostra o valor removido)----------------------
+        vetor= Array(); 
+
+        for(let i=0; i<4; i++){
+            vetor[i] = i;
+        }
+        vetor.pop();
+        document.write(vetor.pop());//vai imprimir o valor excluido
+
+        //exclusão do primeiro item do array(ele mostra o valor removido)----------------------
+        vetor= Array(); 
+
+        for(let i=0; i<4; i++){
+            vetor[i] = i;
+        }
+        vetor.shift();
+        document.write(vetor.shift());//vai imprimir o valor excluido
+
+        //removendo do meio do array
+        vetor= Array(1,2,6,3,4); 
+
+        for(let i=2; i<vetor.length-1; i++){
+            vetor[i] = vetor[i+1];
+        }
+        vetor.pop();
+        console.log(vetor);
+        
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

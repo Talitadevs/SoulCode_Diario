@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array laço for e For In</title>
+<!-- Sua  professora, encomendou um trabalho para você.
+Ela quer que você crie um script que vai pedir o número de alunos da turma (peça via prompt mesmo).
+Em seguida, vai perguntar qual foi a nota de cada um deles.
+No final, seu script deve fornecer a média geral da turma.
+Use array para armazenar as notas, laço FOR para preencher cada elemento do array e um laço FOR IN para calcular a soma das notas (cálculo necessário para calcular a média). -->
+    <script>
+
+
+        //validação da quantidade de alunos 
+        alunos = parseInt(prompt("Digite o número de alunos: "));
+        while(isNaN(alunos) || alunos<0){
+            alert("Valor inválido, digite o NÚMERO novamente.");
+            alunos = parseInt(prompt("Digite o número de alunos: "));
+        }
+
+        //validação da nota dos alunos
+        
+            //array para guardar a nota dos alunos
+            var todas_notas = new Array ();
+            var soma = 0;
+            var media = 0;
+            
+            //notas que serão guardadas no array todas_notas
+            for(a=0; a<alunos; a++){
+                nota = parseFloat(prompt("Agora, digite a nota de cada um deles: "));
+
+                while(isNaN(nota)){
+                alert("Valor inválido, digite o NÚMERO novamente.");
+                nota = parseFloat(prompt("Agora, digite a nota de cada um deles: "));
+                }
+                todas_notas[a] = nota;
+
+                for(var incide in todas_notas){
+                    soma += todas_notas[a];
+                    break
+                }
+                media = (soma / alunos).toFixed(2);
+            }
+        
+        document.write("Número de alunos: " +alunos+ "</br>", "Nota de cada aluno: " +todas_notas+ "</br>", "Soma de todas as notas: "+soma+ "</br>", "Média das notas digitadas: "+media)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo e excluindo de um vetor</title>
+    <!-- Conforme orientações abaixo, realize as seguintes manipulações em um dado vetor S: -->
+<script>
+    
+    // Exiba na tela S= [A,b,B,C,c,1, 2, 3];------------------------------
+    s = Array("A","b","B","C","c","1","2","3");
+    document.write(s+"</br>");
+
+    //Insira na primeira posição do vetor o elemento "a" e exiba na tela;  [a,A,b,B,C,c,1, 2, 3];
+        s = Array("A","b","B","C","c","1","2","3");
+        s.unshift("a");
+        document.write(s+"</br>");
+
+    //Insira na ultima posição do vetor o elemento "4" e exiba na tela;  [a,A,b,B,C,c,1, 2, 3,4];
+    s = Array("A","b","B","C","c","1","2","3");
+        s.unshift("a");
+        s.push("4");
+        document.write(s+"</br>");
+    
+    // Remova o elemento "c" do vetor e exiba na tela;  [a,A,b,B,C,1, 2, 3,4];
+    s = Array("A","b","B","C","c","1","2","3");
+        s.unshift("a");
+        s.push("4");
+        for(i=5; i<s.length-1; i++){
+            s[i] = s[i+1];
+        }
+        s.pop();
+        document.write(s+"</br>");
+
+    // Remova o primeiro elemento do vetor e exiba na tela; [A,b,B,C,1, 2, 3,4];
+    s = Array("A","b","B","C","c","1","2","3");
+        s.unshift("a");
+        s.push("4");
+        for(i=5; i<s.length-1; i++){
+            s[i] = s[i+1];
+        }
+        s.pop();
+        s.shift();
+        document.write(s+"</br>");
+
+    // Remova o ultimo elemento do vetor e exiba na tela; [A,b,B,C,1, 2, 3];
+    s = Array("A","b","B","C","c","1","2","3");
+        s.unshift("a");
+        s.push("4");
+        for(i=5; i<s.length-1; i++){
+            s[i] = s[i+1];
+        }
+        s.pop();
+        s.shift();
+        s.pop();
+        document.write(s+"</br>");
+</script>
+</head>
+<body>
+    
+</body>
+</html>

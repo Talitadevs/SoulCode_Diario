@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function preferedBrowser(){
+            prefer = document.forms[0].browsers.value;
+            alert("Vode prefere o navegador" + prefer);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Escolha seu navagador
+        <selectid="browser" onchange="preferedBrowser()">
+            <option value="Chrome">Chrome</option>
+            <option value="Explore">Explore</option>
+            <option value="Mozilla">Mozilla</option>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <!-- o evento clik faz a função do onclick, a diferença é a forma como inserimos eles, pois o click é inserido como valor. -->
+    <p>Este exemplo utiliza addEventListener () para utilizar o evento "click" para o elemento p</p>
+    <p id="demo">Click me</p>
+
+    <script>
+        document.getElementById("demo").addEventListener("click", myFunction);
+
+        function myFunction(){
+            document.getElementById("demo").innerHTML  = "You cliqued me!"
+        }
+    </script>
+
+</body>
+</html>

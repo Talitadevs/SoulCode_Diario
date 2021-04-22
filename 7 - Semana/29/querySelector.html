@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <script>
+        function myFunction(){
+            //querySelector -  ler o primeiro seletor chamado.
+            document.querySelector(".example").style.backgroundColor = "red";
+        }
+        //querySelectorAll - lê todos os seletores e podemos escolher qual chamar quando colocamos a posição do mesmo no array--> document.querySelectorAll(".example")[2] (pegará a terceira posição do array que está com essa classe.)
+        
+    </script>
+</head>
+<body>
+    
+    <h2 class="example">titulo</h2>
+    <h2 class="example">titulo</h2>
+    <p class="example">teste</p>
+    <p>Clique no botão para adicionar a cor de fundo ao primeiro elemento com no documento com class="exemplo"</p>
+    <button onclick="myFunction()">Experimente</button>
+</body>
+</html>

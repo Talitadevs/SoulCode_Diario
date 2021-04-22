@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //caracter de escape, para ter certeza que será impresso o que foi escrito, já que os simbolos podem se confundir. Tem um link no teacheble unidade 6, aula 151, que leva para o mozilla que tem uma tabela deles.
+
+    var formasStrings = "I\'m";
+
+
+    //contactenção em contexto-----
+    var button = document.querySelector('button');
+
+    button.onclick = function(){
+        var nome = prompt("Qual seu nome?")
+        alert(!"Olá" +nome+ "prazer em conhecê-lo!");
+    }
+
+    //converte de string para número
+    var myString = 123;
+    var myNum = Number(myString);
+    console.log(typeof myNum);
+
+    //converte para string
+    var myNum = 123;
+    var myString = myNum.toString();
+    typeof myString;
+
+    //descobre comprimento, seja array, string
+    var nome = "Talita";
+    console.log(nome.length);
+
+</script>
+<body>
+    <button>Precione-me</button>
+</body>
+</html>

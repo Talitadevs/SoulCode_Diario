@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenada</title>
+    <script>
+        // Crie um script que receba uma quantidade N pelo prompt, que determina a quantidade valores digitados pelo usuario. Em seguida utilize o metodo sort e reverse para ordenar em ordem crescente decrescente e exiba na tela as 03 formas do array(ordem digitada, ordem crescente e ordem decrescente).
+
+        //quantidade de infos a inserir-----------------------
+        var qtd = 0;
+        qtd=parseInt(prompt("Digite a quantidade de valores a inserir: "));
+        while(isNaN(qtd)){
+            alert("Número inválido, digte novamente");
+            qtd=parseInt(prompt("Digite a quantidade de valores a inserir: "));
+        }
+       
+        //infos inseridas--------------------------
+        var dig = [];
+        for(i=0; i<qtd; i++){
+            dig.push(prompt("Digite o valor: "));
+        }
+
+        //infos digitadas----------------------------------
+        document.write("Ordem digitada: " +dig.join(", ") + ".", "</br>");
+        
+        //infos em ordem crescente--------------------------
+        ajuste = dig.sort((a, b) =>{
+                if (a < b){
+                  return -1
+                }else{
+                    if (a > b)
+                  return 1 
+                }   
+            });
+
+
+        document.write("Ordem crescente: " +ajuste.sort((a,b)=>{
+            return a-b
+        }).join(", "), ".","</br>");
+
+        //infos em ordem decrescente--------------------------
+        document.write("Ordem decrescente: "+dig.reverse().join(", "),".");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
