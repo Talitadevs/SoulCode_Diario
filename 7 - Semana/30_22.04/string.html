@@ -15,7 +15,7 @@
     //contactenção em contexto-----
     var button = document.querySelector('button');
 
-    button.onclick = function(){
+    button.onclick= function(){
         var nome = prompt("Qual seu nome?")
         alert(!"Olá" +nome+ "prazer em conhecê-lo!");
     }
@@ -34,6 +34,29 @@
     var nome = "Talita";
     console.log(nome.length);
 
+    //mostrar a ultima letra da string
+    //talita
+    //012345 - tamanho 6
+    //console.log(nome[nome.length-1]) - tamanho 6-5, vai retornar a última posição.
+    var nome = "Talita";
+    console.log(nome[nome.length-1]);
+
+    //substring - localiza, e mostra em qual posição ela inicia. Se não achar, retorna -1.
+    var nome = "Talita";
+    console.log(nome.indexOf("li"));
+
+    
+    //slice - retorna a particula no intervalo de inicio e fim determinados por mim. É preciso conhecer as posições da string. Se colocar só o inicio, ele retorna o restante da string também.
+    var nome = "Talita";
+    console.log(nome.slice(2,5));
+
+    //toLowerCase() e toUpperCase() - transforma para minusculo e para maiusculo
+    var nome = "Talita";
+    console.log(nome.toUpperCase());
+
+    //replace - atualizar partes de uma string
+    var nome = "Talita";
+    console.log(nome.replace("lit","tian"))
 </script>
 <body>
     <button>Precione-me</button>

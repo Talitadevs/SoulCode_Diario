@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Strings</title>
+    <script>
+        //1) Encontre a posição do caractere h na string text. 
+        var text = "abcdefghijklm"; 
+        var pos = text.indexOf("h");
+        document.write("Resposta 1: "+pos+"</br>");
+
+        //2) Use o método slice para retornar a palavra "bananas."
+        var txt = "Posso comer bananas o dia todo";
+        var x = txt.slice(12,19);
+        document.write("Resposta 2: "+x+"</br>");
+
+        //3) Use o método String correto para substituir a palavra "Hello" pela palavra "Welcome".
+        //Não tem as palavras hello e Welcome no exemplo passado, entendi que se referem ao "mundo" e "bem-vindo".
+        var txt = "Olá, mundo";
+        txt = txt.replace("mundo","bem-vindo");
+        document.write("Resposta 3: "+txt+"</br>");
+
+        //4) Converta o valor de txt para maiúsculas.
+        var txt = "Olá, mundo";
+        document.write("Resposta 4: "+txt.toUpperCase()+"</br>");
+
+        //5) Converta o valor de txt para minúsculas.
+        var txt = "Olá, mundo";
+        document.write("Resposta 5: "+txt.toLowerCase()+"</br>");
+
+        //6) Use a propriedade length para alertar sobre o comprimento txt.
+        var txt = "Olá, mundo!";
+        var x = txt.length;
+        alert("Resposta 6: "+x);
+
+        //7) Use caracteres de escape para alertar "We are "Vikings"".
+        var text = "We are \'Vikings'";
+        alert("Resposta 7: "+text);
+
+        //8) Concatene as duas strings para alertar "Hello World!".
+        var str1 = "Olá";
+        var str2 = "Mundo!";
+        alert("Resposta 8: " +str1+ " " +str2);
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
