@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converte para maiuscula</title>
+    <script>
+        function maiuscula(a){
+            a.value = a.value.toUpperCase();
+        }
+    </script>
+    <style>
+        body{
+            background-image: repeating-linear-gradient(rgb(250, 235, 235), pink);
+        }
+        h1{
+            color: rgb(247, 56, 88);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 100px;
+            text-align: center;
+        }
+        form{
+            margin-left: 27rem;
+            padding: 20px;
+        }
+        input{
+            font-size: 18px;
+            margin: 10px;
+            padding: 5px;
+        }
+        button{
+            background-color: rgb(241, 146, 162);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px grey;
+            color: white;
+            font-size: 20px;
+            margin-left: 9rem;
+            margin-top: 1rem;
+            padding: 10px 50px 10px 50px;
+        }
+    </style>
+</head>
+<body>
+<!-- //Crie uma pagina que contenha um formulário, em que, a medida que o usuário for digitando o texto e des-selecionar o campo input, o texto será transformado em letras maiúscula:
+// campos do formulário:
+// Nome
+// Email
+// Endereço -->
+    <h1>CONTATOS</h1>
+    <form>
+        <input type="text" placeholder="Digite seu nome completo" size="43" onblur="maiuscula(this)" required><br>
+
+        <input type="email" placeholder="Digite seu e-mail" size="43" required><br>
+
+        <input type="text" placeholder="Digite o nome da sua rua" size="32" onblur="maiuscula(this)" required>
+
+        <input type="text" placeholder="Nº" size="2" onblur="maiuscula(this)" required><br>
+
+        <input type="text" placeholder="Bairro" size="43" onblur="maiuscula(this)" required><br>
+
+        <input type="text" placeholder="Cidade" size="17" onblur="maiuscula(this)" required>
+
+        <input type="text" placeholder="CEP - Somente números" size="17" onblur="maiuscula(this)" required><br>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

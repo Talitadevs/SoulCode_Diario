@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <script>
+        //Objeto Date - apenas do jeito que está já mostra a data, hora e local ao mandar imprimir.
+        var data = new Date();
+        document.write(data+ "</br>")
+
+        //sempre informar um mes a menos, porque ler a partir do 0.
+        var data = new Date(1989,8,22);
+        document.write(data+ "</br>")
+
+         //entende como o mes.. Pode dar errado em alguma navegador
+         var data = new Date("10");
+        document.write(data+ "</br>")
+
+        //entende como dia 4, mes 10, ano 2021. Pode dar errado em alguma navegador
+        var data = new Date("10/04/2021");
+        document.write(data+ "</br>")
+//__________________________________________
+        //Metodos para manipularmos as datas
+
+        var data = new Date();
+        document.write(data.getDate()+ "</br>")//só o dia
+        document.write(data.getDay())//o dia da semana, sexta é 5º
+        document.write(data.getMonth()+ "</br>")//retorna o numero do mes
+
+    </script>

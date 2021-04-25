@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charAt</title>
+    <Script>
+//charAt, quando precisarmos pegar apenas um caracter de uma string, devemos usá-lo. 
+
+        var nome = "Helena";
+        console.log(nome.charCode(0));//vai pega 1ª letra
+
+        console.log(nome.charCode(nome.length-1));//vai pega a ultima letra
+
+        console.log(nome.charCodeAt(0)); //vai retonar o valor que a letra representa na tabela unicode
+//____________________________________________________
+//A forma abaixo retorna apenas um caracter também, mas deve ser usado quando trabalharmos com array
+
+        console.log(nome[0]);//vai pegar a 1ª letra
+        
+        console.log(nome(nome.length-1));//pega a última letra
+
+        console.log(nome(nome.length-2));//pega a penúltima letra
+
+//_________________________________________________
+//Substring - a 1ª posição do (10,24), começa a contar a partir do carcter 10 e para no 24, vai apresentar "Polly "
+        
+        var texto = "Luciane e Polly aluna(s) aplicada(s)."
+
+        console.log(texto.substring(10,24))
+
+        console.log(texto.substring(10,-3))//negativo é interpretado como 0, equivale dizermos (0,10);
+
+        console.log(texto.substring(-1,10))// vai retornar 0;
+
+//__________________________________________________
+//Split - mostra cada caracter na sua posição.
+
+        var stringExemplo = "Javascript é na SoulCode";
+        console.log(stringExemplo.split(""))
+
+        console.log(stringExemplo.split(" "))//se colocar espaço, ele vai mostrar cada palavra na sua posição, separando com vírgula, assim como é mostrado na posição do array,
+
+        console.log(stringExemplo.split(" ",3))//vai mostrar as tres primeiras palavras
+
+        //Exemplo, podemos separar o que vem antes so arroba no e-mail, para usarmos como login
+
+        console.log(stringExemplo.split(/\d+/))// remove os números da frase e mostra as palavras separadas por vírgula
+
+        
+        console.log(stringExemplo.split(/\s*;\s*/))// não entendi
+
+//slice - aprendido na aula de ontem, também fatia strigs, assim como os exemplos dados aqui, mas a diferença entre eles pode ser vista neste link https://www.docow.com/11243/qual-e-a-diferenca-entre-string-slice-e-string-substring.html
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
