@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        //1) Alert "John" by extracting information from the person object.
+        var person = {
+            firstName:"John",
+            lastName: "Doe"
+        };
+        alert(person.firstName);
+        //____________________________________________
+        //2) Adicione a seguinte propriedade e valor ao objeto pessoa: país: Noruega;
+        var person = {
+            primeiroNome: "John",
+        }
+        var pais = Object.create(person);
+        person.pais = "Noruega";
+        alert("Primeiro nome: "+person.primeiroNome+" | País: "+person.pais);
+        //__________________________________________
+        //3) Crie um objeto chamado pessoa com nome = João, idade = 50. Em seguida, acesse o objeto para alertar("João tem 50 anos")
+        var pessoa = new Object()
+            this.nome = "João",
+            this.idade = 50
+            alert(nome+" tem "+idade+" anos.")
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
