@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jQuery </title>
+    <!-- Referencia a biblioteca jquery (JS) -->
+    <script type="text/javascript" src="../../Programas/jquery-3.6.0.min.js"></script>
+      <!-- Funcionalidades da página -->
+      <script type="text/javascript">
+       function mostraParagrafo(){
+          $("#paragrafo").fadeIn("slow");
+      }
+      </script>
+         
+        
+</head>
+<body>
+  <input type="button" onclick="mostraParagrafo()" value="exibe paragrafo" />
+  <p id="paragrafo" style="display: none;">
+  Este paragrafo é um exemplo
+</body>
+</html>

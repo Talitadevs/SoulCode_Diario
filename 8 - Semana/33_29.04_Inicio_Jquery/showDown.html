@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução jQuery </title>
+    <!-- Referencia a biblioteca jquery (JS) -->
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <!-- Funcionalidades da página -->
+    <style type="text/css">
+        .escondido {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function mostraParagrafo() {
+            $(".escondido").slideDown("slow");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="mostraParagrafo()" value="exibe paragrafo" />
+    <p class="escondido"> Paragrafo exemplo 1. </p>
+    <p class="escondido"> Paragrafo exemplo 2. </p>
+    <p class="escondido"> Paragrafo exemplo 3. </p>
+</body>
+
+</html>

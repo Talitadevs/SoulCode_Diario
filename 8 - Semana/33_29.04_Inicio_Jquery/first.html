@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução jQuery </title>
+    <!-- Referencia a biblioteca jquery (JS) -->
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <!-- Funcionalidades da página -->
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#botao').click(function () {
+                $('p:first').css('background-color', 'red');
+            }
+            );
+        }
+        );
+    </script>
+</head>
+
+<body>
+    <input type="button" id="botao" value="adiciona cor vermelha" />
+    <p>Paragrafo 1 irmão da div.</p>
+    <p>Paragrafo 2 irmão da div.</p>
+    <p>Paragrafo 3 irmão da div.</p>
+</body>
+
+</html>

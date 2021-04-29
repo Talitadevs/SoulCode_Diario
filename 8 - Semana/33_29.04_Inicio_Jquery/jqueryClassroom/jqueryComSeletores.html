@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Com seletores 1</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 1) Use the correct selector to hide all p elements. -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("p").hide("slow");
+        });
+    </script>
+    <style>
+        body{
+            font-size: 20px;
+        }
+    </style>
+    <!-- ------------------------------------------------------- -->
+</head>
+<body>
+    <p class="escondido"> Paragrafo exemplo 1. </p>
+    <p class="escondido"> Paragrafo exemplo 2. </p>
+    <p class="escondido"> Paragrafo exemplo 3. </p>
+
+</body>
+</html>
