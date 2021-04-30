@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        //PARA VER SEPARADO TEM QUE TER UM HTML PARA CADA
+  $(function(){
+     
+        var itens = $("#lista li").detach(); //guarde aqui o meu elemnto da lista li e some da tela
+        consolle(itens) //mostra todos os elementos guardados
+        var itens = $("#lista").empty();//diferente do detach, ele some da tela e não guarda na variavel
+        var itens = $("#lista").remove();//exclui todos que estão dentro da lista, inclusive os filhos
+        var itens = $("#lista li").unwrap();//todas as lis ficam soltas, pois remove o pai ul
+        var itens = $("h3").replaceAll("#lista li");//substitui os elementos da listas pelo h3, tira ele do lugar que está e coloca em outro
+        var itens = $("#lista li").replaceWith("<h4>Novo conteúdo</h4>");//inverso ao replaceeAll, pois pede para ir na lista e trocar o que tem lá por este novo conteudo.
+    });
+</script>
+</head>
+<body>
+    <h3>Lista de itens</h3>
+    <ul id="lista">
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        //PARA VER SEPARADO TEM QUE TER UM HTML PARA CADA
+  $(function(){
+     
+    $("#campotexto").attr("value")//onde quer fazer a alteração e pelo que quer alterar..se tiver mais de um vai retonar o primeiro, se ele não existe, retorna indefinido
+    $("a").attr("title")//vai no link e traz quem está com o atributo title, commo todos tem, ele traz o primeiro.
+    $('li').attr("type", "square");//se tiver atribuito li  ele vai trocar a boinha da lista pelo quadrado
+    $('a').attr({//altera varios atributos de uma só vez.
+    'title': 'Title modificado por jQuery',
+    'href': 'http://www.soulcodebrasil.com',
+    'style': 'color: #f80'
+});
+    });
+    $(document).ready(function() {
+            $("a").each(function(i) {//a cada chamada da função, pega o indice e
+                var titulo = $(this).attr("title");//pegue o nome do title correspondente
+                alert("Atributo title do link " + i + ": " + titulo);
+            });
+        });
+
+
+</script>
+</head>
+<body>
+    <a href="http://soulcodeacademy.org/" title="SoulCode Academy">SoulCode</a>
+    <a href="http://niteo.com.br/" title="Niteo | Data & Analytics for Business Productivity">Niteo</a> 
+    <a href="http://itlean.com.br/" title="Itlean - A IT Lean é uma empresa 100% digital, capaz de fornecer 
+    as melhores soluções para o seu negócio. Pensou inovação, pensou IT Lean!">IT Lean</a>
+</body>
+</html>

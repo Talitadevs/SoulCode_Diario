@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //11) Use um método jQuery para remover todos os elementos <div> com class = "test" e class = "demo".
+        $(document).ready(function() {
+            $("div").remove(".test, .demo");
+        });
+    </script>
+</head>
+<body>
+    <div class="test">
+        <p>11) Texto com class test tem que ser removido.</p>
+    </div>
+    <div>
+        <p>11) Texto sem class, o único que pode aparecer.</p>
+    </div>
+    <div class="demo">
+        <p>11) Texto com class demo tem que ser removido.</p>
+    </div>
+</body>
+</html>
