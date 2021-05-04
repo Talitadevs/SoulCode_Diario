@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+    //dois botoes, um com a função de mostrar e outro com a função de ocultar
+      $(document).ready(function() {
+        $("#btnShow").click(function(){
+        $("#display").show();
+    })
+    $("#btnShow").click(function(){
+        $("#display").hide();
+    })
+    });
+
+    //em apenas um botão as duas funões. Esses modelos estão disponíveis no teachable
+
+
+      $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").toggle(800);//quanto menor o valor, mais rápido vai acontecer...pode ser slow (devagar)ao invés do número ou fast(rapido).
+    })
+
+    
+    $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").fadeIn();//?
+    })
+
+    $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").fadeOut();//?
+    })
+
+    $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").fadeTo(1000, 0.5);//permite determinar a velocidade do esmaecimento da ação de 0 a 1. No caso o 0,5, ele vai clarear até chegar a 0.5 de opacidade. Se colocar 0, ficará invísivel, o que faz os botões ficarem no lugar.
+    })
+
+    $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").slideUp();
+    })//permite que deslize para cima na telaSe colocar paramentro, tipo 800, é a velocidade que ele executará a ação.
+
+    $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").slideDown();
+    })//permite que deslize para baixo na tela. Se colocar paramentro, tipo 800, é a velocidade que ele executará a ação.
+
+    $(document).ready(function() {
+        $("#btnHide").click(function(){
+        $("#display").slideToggle();
+    })//permite que deslize tanto para cima quanto para baixo em um único botão.. Se colocar paramentro, tipo 800, é a velocidade que ele executará a ação.
+    </script>
+  
+</head>
+<body>
+    digite seu nome: <input type="text">
+    <p id="display">Essa div ficara visivel ou não dependendo do /p>
+    <span>Prazer em conhecê-lo</span>
+    <p>
+        <input type="text" id="btnHide" value="Ocultar">
+        <input type="text" id="btnShow" value="Mostrar">
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $("div").scroll(function () {
+                $("span").text(x += 1);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p>Experimente a barra de rolagem no div</p>
+
+    <div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">
+        Em meus anos de juventude e vulnerabilidade, meu pai me deu alguns conselhos que venho pensando 
+        desde então.
+        <br><br>
+
+        'Sempre que você sentir vontade de criticar alguém', ele me disse, lembre-se de que todas as 
+        pessoas neste mundo não tiveram as vantagens que você teve. '
+    </div>
+
+    <p>Rolado <span>0</span> vezes.</p>
+
+</body>
+
+</html>

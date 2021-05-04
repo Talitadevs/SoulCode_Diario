@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $("span").css("display", "inline");
+            });
+        });
+    </script>
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input>
+
+    <span>Prazer em conhecê-lo !"</span>
+    <p>Clique no campo de entrada para obter o foco.</p>
+
+</body>
+
+</html>

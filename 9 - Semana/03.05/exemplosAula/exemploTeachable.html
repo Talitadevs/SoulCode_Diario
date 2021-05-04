@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+        //ao clicar, troca a cor de fundo para azul e inclui o texto
+      $(document).ready(function() {
+    var $area = $("#area");
+    $area.click(function(){
+        $(this).css("background", "blue");
+        $("#texto").html("click");
+    });
+    //ao dar duplo clique, troca a cor de fundo para red e inclui o texto
+    $area.dblclick(function(){
+        $(this).css("background", "red");
+        $("#texto").html("double click");
+    });
+    //troca a cor ao passar o mouse sob a div, similar ao mouse houver e inclui o texto
+    $area.mousemove(function(){
+        $(this).css("background", "lightgreen");
+        $("#texto").html("mouse move");
+    });
+    //troca a cor ao mouse sair da div 
+    $area.mouseout(function(){
+        $(this).css("background", "tan");
+        $("#texto").html("mouse out");
+    });
+});
+    </script>
+    <style>
+    #area {
+    background: lightblue;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+#texto { 
+    display:block; 
+    margin: 2px;
+}
+</style>
+</head>
+<body>
+    <div id="area"></div>
+    <div id="texto"></div>
+</body>
+</html>

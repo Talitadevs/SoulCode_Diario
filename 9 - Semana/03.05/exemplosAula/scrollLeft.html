@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                alert($("div").scrollLeft() + " px");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div style="border:1px solid black;width:100px;height:130px;overflow:auto">
+        A palavra mais longa no dicionário de inglês é: pneumonoultramicroscopicsilicovolcanoconiose.
+    </div><br>
+
+    <button>Retorna a posição hohrizontal da barra de rolagem</button>
+    <p>Mova a barra de rolagem para a direita e clique no botão novamente.</p>
+
+</body>
+
+</html>

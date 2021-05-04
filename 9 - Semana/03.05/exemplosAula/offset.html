@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var x = $("p").offset();
+                alert("Top: " + x.top + " Left: " + x.left);
+            });
+            $("p").offset({top:100,left:640})
+        });
+
+       
+
+    </script>
+</head>
+
+<body>
+
+    <p>Este é um paragrafo.</p>
+
+    <button>Retorna as coordenadas de deslocamento do elemento p</button>
+
+</body>
+
+</html>

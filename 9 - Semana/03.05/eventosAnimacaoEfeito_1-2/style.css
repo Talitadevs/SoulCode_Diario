@@ -1,0 +1,54 @@
+*{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.divs{
+    display: flex;
+    height: 200px;
+    margin: 0 auto;
+    width: 50%;
+}
+div{
+    background-image: url(gradiente2.GIF);
+    height: 99px;
+    float: left;
+    margin: 2%;
+    width: 20%;
+}
+.botoes{
+    clear: both;
+    display: flexbox;
+    padding: 20px;
+    width: 47%;
+    margin: 0 auto;
+}
+button{
+    font-size: 15px;
+    margin: 0.5%;
+    padding: 1%;
+}
+.form{
+    margin: 0 auto;
+    width: 50%;
+}
+form{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+input, select{
+    border-color: rgb(210, 212, 210);
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 3px;
+    padding: 7px;
+
+}
+#enviar{
+    background-color: rgb(250, 249, 195);
+}
+#dados{
+    margin-top: 20px;
+    font-size: 20px;
+}

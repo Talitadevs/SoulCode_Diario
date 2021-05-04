@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            position: relative;
+            left: 50%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var x = $("p").position();
+                alert("Top position: " + x.top + " Left position: " + x.left);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    
+    <p>Este é um paragrafo.</p>
+    <button>Retorne aqui a posição superior e esquerda do elemento p</button>
+
+</body>
+
+</html>

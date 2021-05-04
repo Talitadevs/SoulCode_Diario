@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#divTeste").hover(function () {
+            //Ao posicionar o cursor sobre a div
+            $(this).css("background", "red");
+          },
+          function () {
+            //Ao remover o cursor da div
+            $(this).css("background", "white");
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="divTeste">Passe o mouse aqui.</div>
+  </body>
+</html>

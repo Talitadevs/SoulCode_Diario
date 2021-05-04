@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //bind está sendo descontinuado e substituído pelo on
+        $(document).ready(function(){
+            $("p").bind(function(){
+                alert("O paragráfo foi clicado")
+            })
+        })
+        //o on faz com que esse clique acione a função
+        $(document).ready(function(){
+            $("p").on(function(){
+                alert("O paragráfo foi clicado")
+            })
+        })
+
+        //remoeve o clique porque passei o click no argumento, está sendo substituido pelo off
+            $("p").unbind("click");
+            $("p").off("click");
+
+
+        //remove todas os tratadores porque não tem parametro
+        $("p").unbind();
+    
+    </script>
+</head>
+<body>
+    <p>Click me!</p>
+</body>
+</html>

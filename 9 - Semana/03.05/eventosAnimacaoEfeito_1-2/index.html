@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos, animações e Efeito 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="script.js"></script>
+<!-- 1) Criar uma página que possua 5 divs, 3 botões, 1 formulário contendo 5 campos de texto(Nome, endereço, telefone, email e cpf) , e 1 select contendo opções de estados do Brasil (Pelo menos 10 estados) e um botão de enviar. Faça o que se pede no js: -->
+</head>
+<body>
+    <section class="divs">
+        <div>Div 1</div>
+        <div id="esconde2">Div 2</div>
+        <div>Div 3</div>
+        <div id="esconde4">Div 4</div>
+        <div>Div 5</div>
+    </section>
+    <section class="botoes">
+        <button id="botaoOne">Cor, largura, altura e efeito</button>
+        <button id="botaoTwo">Cor, largura e altura</button>
+        <button id="botaoThree">Duplo clique, desaparece div 2 e 4.</button>
+    </section>
+    <section class="form">
+        <form action="#">
+            <input type="text" id="nome" size="40" placeholder="Nome completo"> <br>
+            <input type="text" id="adress" size="40" placeholder="Digite seu endereço"><br>
+            <input type="text" id="phone" size="40" placeholder="DDD + número de telefone"><br>
+            <input type="text" id="email" size="40" placeholder="Digite seu e-mail"><br>
+            <input type="text" id="cpf" size="18" placeholder="Digite seu CPF">
+            <select name="" id="">
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Espiríto Santo">Espiríto Santo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Pernambuco">Pernambuco</option>
+            </select><br>
+            <button onclick="dadosDig()">Enviar</button><br>
+            <span id="dados">
+                Qual o nome e e-mail digitado?                
+            </span>
+        </form>
+</section>
+
+
+</body>
+</html>

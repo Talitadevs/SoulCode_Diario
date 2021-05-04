@@ -1,0 +1,108 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(252, 253, 251);
+}
+/* menu */
+.menu{
+    background-image: url(img/banner.JPG);
+    display: flexbox;
+    padding-top: 3%;
+}
+.menu a{
+    color: rgb(196, 226, 196);
+    padding-left: 10%;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: greenyellow;
+}
+
+/* banner */
+.bkgBanner{
+    background-image: url(img/banner.JPG);
+    background-size: contain;
+    box-shadow: 2px 2px 6px gray;
+    display: flex;
+}
+.bkgBanner h1{
+    color: #B7CF6D;
+    font-size: 100px;
+    font-family: cursive;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5%;
+    text-align: center;
+}
+#logo{
+    float: left;
+    margin-left: 20%;
+    margin-top: 30px;
+    width: 10%;
+}
+
+/* resumo */
+.resumo{
+    height: 150px;
+    line-height: 1.5;
+    margin: 0 auto;
+    overflow: auto;
+    padding-top: 4%;
+    text-align: center;
+    width: 50%;
+}
+.resumo h2{
+    color: #53B153;
+}
+
+/* primeira linha dos produtos - imagens */
+.imgline1{
+    display: flexbox;
+    margin-left: 20%;
+    margin-top: 40px;
+    width: 70%;
+}
+
+/* boxes informativos respectivos as imagens*/
+.infoImg{
+    display: flex;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 70%;
+}
+.gravataTimao, .gravataParis, .gravataSnoop{
+    float: left;
+    padding-left: 15%;
+}
+.precoAntigo{
+    color: red;
+    text-decoration: line-through;
+}
+.precoNovo{
+    font-weight: bold;
+}
+button{
+    background-color: rgb(71, 107, 18);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 7px;
+}
+button a{
+    color:#B7CF6D;
+    text-decoration: none;
+}
+
+/* Rodape */
+footer{
+    background-color: #397F40;
+    color: #B7CF6D;
+    height: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+    //quando deselecionar o campo input, solta o alerta
+      $(document).ready(function() {
+    
+    $("input").blur(function(){
+        alert("This input field")
+    })
+    });
+    
+    //quando deselecionar ou der enter fora do campo input, solta o alerta
+    $(document).ready(function() {
+    
+    $("input").change(function(){
+        alert("This input field")
+    })
+    });
+
+    //é preciso ter feito alguma mudança no campo e, quando deselecionar ou der enter fora do campo input, solta o alerta
+    $(document).ready(function() {
+    
+    $("input").change(function(){
+        alert("This input field")
+    })
+    });
+
+    //acionar a função ao clicar
+    $(document).ready(function() {
+    
+    $("input").click(function(){
+        alert("This input field")
+    })
+    });
+
+    //aciona a função ao dar duplo clique
+    $(document).ready(function() {
+    
+    $("input").dblclick(function(){
+        alert("This input field")
+    })
+    });
+
+    //foi descontinuado, mas ele mostra um erro determinado por mim quando a imagem não é carregada.
+    $(document).ready(function() {
+    
+    $("input").error(function(){
+        alert("This input field")
+    })
+    });
+
+    //quando deselecionar ou der enter fora do campo input, solta o alerta
+    $(document).ready(function() {
+ 
+    $("input").focus(function(){
+        $("span").css("display","inline");
+    })
+    });
+
+    //Quando clicar no campo input, o fundo ficará amarelo.
+    $(document).ready(function() {
+    
+    $("input").keydown(function(){
+        $("input").css("background-color","yellow");
+    })
+    });
+
+     ///Quando deixar de clicar no campo input, o fundo ficará rosa.
+     $(document).ready(function() {
+    
+    $("input").keyup(function(){
+        $("input").css("background-color","pink");
+    })
+    });
+    //tem outros eventos que não estão com exemplo aqui, mais informações no link do w3 https://www.w3schools.com/jquery/jquery_ref_events.asp
+    </script>
+    <style>
+        span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    digite seu nome: <input type="text">
+    <p>Escreva algo no campo</p>
+    <span>Prazer em conhecê-lo</span>
+</body>
+</html>

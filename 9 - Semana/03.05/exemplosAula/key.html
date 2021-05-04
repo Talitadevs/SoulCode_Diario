@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input").keydown(function () {
+                $("input").css("background-color", "yellow");
+            });
+            $("input").keyup(function () {
+                $("input").css("background-color", "pink");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    Digite seu nome: <input type="text">
+
+    <p>Digite seu nome no campo de entrada acima.
+         Ele mudará a cor de fundo quando tecla e quando solta a tecla.</p>
+
+</body>
+
+</html>
